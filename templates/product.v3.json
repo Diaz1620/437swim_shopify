@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "gift-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "e281f1a1-29a1-44da-9baf-292e0b86639d": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "bg_color": "",
+            "color": "",
+            "btn": "",
+            "show_dynamic_checkout": false
+          }
+        },
+        "705cc7c0-ebba-4bfd-bc63-216c97a3cda8": {
+          "type": "text",
+          "settings": {
+            "text": "THE PERFECT GIFT",
+            "text_style": "uppercase"
+          }
+        },
+        "5d0d1712-442c-4b4d-9fe7-f26761710722": {
+          "type": "text",
+          "settings": {
+            "text": "Whatever your budget, get them something you know they'll love.. a digital 437 Gift Card. ",
+            "text_style": "body"
+          }
+        },
+        "5f7b86c5-eb0d-4127-865c-60e968ff5b6b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "bg_color": "",
+            "color": "",
+            "heading": "DETAILS",
+            "content": "",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "a57bbe7a-ca18-47c7-815d-df0858796818": {
+          "type": "collapsible_tab",
+          "settings": {
+            "bg_color": "",
+            "color": "",
+            "heading": "SHIPPING AND RETURNS",
+            "content": "<p>{{ product.metafields.details.return_and_shipping.value }}<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "daa75eaf-340d-4388-bb53-a4c52f99851c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "bg_color": "",
+            "color": "",
+            "heading": "REVIEWS",
+            "content": "",
+            "page": "",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "e281f1a1-29a1-44da-9baf-292e0b86639d",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "705cc7c0-ebba-4bfd-bc63-216c97a3cda8",
+        "5d0d1712-442c-4b4d-9fe7-f26761710722",
+        "5f7b86c5-eb0d-4127-865c-60e968ff5b6b",
+        "a57bbe7a-ca18-47c7-815d-df0858796818",
+        "daa75eaf-340d-4388-bb53-a4c52f99851c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "437 MUST HAVES",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "3dae4bfa-ea99-4185-adb6-e16dfc47394d": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1920
+          }
+        }
+      },
+      "block_order": [
+        "3dae4bfa-ea99-4185-adb6-e16dfc47394d"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "loox-product-reviews-app-section"
+  ]
+}

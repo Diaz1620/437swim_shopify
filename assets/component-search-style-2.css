@@ -1,0 +1,37 @@
+.search-modal__form {
+    position: relative;
+  }
+  
+  .search__input.field__input {
+    padding-right: 5rem;
+  }
+  
+  .search__button .icon {
+    height: 1.8rem;
+  }
+  
+  /* Remove extra spacing for search inputs in Safari */
+  input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  .bc-search-result-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    padding: 10px 15px;
+    min-height: 90px;
+    height: auto;
+    width: 100%;
+    background: var(--color-background);
+  }
+  .bc-search-result-wrapper.active {
+    display: block;
+  }
+  .bc-search-result-wrapper .bc-cart__item:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+  

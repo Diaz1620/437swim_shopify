@@ -1,0 +1,11 @@
+.campaign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-img img {
+    width: 100%;
+    height: auto;
+}

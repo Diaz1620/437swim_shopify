@@ -1,0 +1,14 @@
+{%- for option in options -%}
+{%- assign optionName = option.name | downcase -%}
+{%- if optionName contains 'color' or optionName contains 'colour' -%}
+    <div class="bc-card-color">
+        <div class="bc-card-color__list">
+            {%- for value in option.values -%}
+            <div class="bc-card-color__item">
+                <span style="background:{{ value | downcase }};"></span>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+{%- endif -%}
+{%- endfor -%}

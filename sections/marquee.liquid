@@ -1,0 +1,208 @@
+{%- if section.settings.marquee != blank -%}
+<div class="bc-marquee-wrapper">
+    <marquee class="bc-marquee-wrapper__marquee bc-marquee-wrapper__marquee-desktop" 
+        direction="{{ section.settings.direction }}" 
+        behavior="{{ section.settings.behavior }}" 
+        scrollamount="{{ section.settings.speed }}"
+        {% if section.settings.pause %}
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+        {% endif %}
+        {% if section.settings.bg_color != blank %}
+        bgcolor="{{ section.settings.bg_color }}"
+        {% endif %}
+        {% if section.settings.f_size != blank %}
+        style="font-size:{{ section.settings.f_size }};"
+        {% endif %}
+    >
+        {{ section.settings.marquee }}
+    </marquee>
+    <marquee class="bc-marquee-wrapper__marquee bc-marquee-wrapper__marquee-mobile" 
+        direction="{{ section.settings.m_direction }}" 
+        behavior="{{ section.settings.m_behavior }}" 
+        scrollamount="{{ section.settings.m_speed }}"
+        {% if section.settings.m_pause %}
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+        {% endif %}
+        {% if section.settings.m_bg_color != blank %}
+        bgcolor="{{ section.settings.m_bg_color }}"
+        {% endif %}
+        {% if section.settings.m_f_size != blank %}
+        style="font-size:{{ section.settings.m_f_size }};"
+        {% endif %}
+    >
+        {{ section.settings.marquee }}
+    </marquee>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Marquee",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "marquee",
+      "label": "Marquee Text",
+      "default": "<p>Your Marquee Text is Here!</p>"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Settings"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "background"
+    },
+    {
+      "type": "checkbox",
+      "id": "pause",
+      "label": "Hover in Pause",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "up",
+          "label": "Up"
+        },
+        {
+          "value": "down",
+          "label": "Down"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "behavior",
+      "label": "Behavior",
+      "options": [
+        {
+          "value": "scroll",
+          "label": "Scroll"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        },
+        {
+          "value": "alternate",
+          "label": "Alternate"
+        }
+      ],
+      "default": "scroll"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed",
+      "min": 2,
+      "max": 50,
+      "step": 4,
+      "unit": " px",
+      "default": 6
+    },
+    {
+      "type": "text",
+      "id": "f_size",
+      "label": "Font Size",
+      "default": "32px"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "color",
+      "id": "m_bg_color",
+      "label": "background"
+    },
+    {
+      "type": "checkbox",
+      "id": "m_pause",
+      "label": "Hover in Pause",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "m_direction",
+      "label": "Direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "up",
+          "label": "Up"
+        },
+        {
+          "value": "down",
+          "label": "Down"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "m_behavior",
+      "label": "Behavior",
+      "options": [
+        {
+          "value": "scroll",
+          "label": "Scroll"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        },
+        {
+          "value": "alternate",
+          "label": "Alternate"
+        }
+      ],
+      "default": "scroll"
+    },
+    {
+      "type": "range",
+      "id": "m_speed",
+      "label": "Speed",
+      "min": 2,
+      "max": 50,
+      "step": 4,
+      "unit": " px",
+      "default": 6
+    },
+    {
+      "type": "text",
+      "id": "m_f_size",
+      "label": "Font Size",
+      "default": "16px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "marquee"
+    }
+  ]
+}
+{% endschema %}

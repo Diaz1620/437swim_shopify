@@ -1,0 +1,231 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "summary": {
+          "type": "summary",
+          "settings": {
+          }
+        },
+        "link": {
+          "type": "link",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "summary",
+        "link"
+      ],
+      "settings": {
+        "show_image": true
+      }
+    },
+    "16475133061f718aeb": {
+      "type": "image-banner-blog",
+      "blocks": {
+        "16475133057e9d7cf0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BRIDAL BY 437",
+            "align": "center",
+            "color": "#000000",
+            "weight": "",
+            "size": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_align": "center",
+            "m_color": "#000000",
+            "m_weight": "",
+            "m_size": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        },
+        "16475133057e9d7cf0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the most important “I Do” you’ll ever have to say.<\/p>",
+            "align": "center",
+            "color": "#484546",
+            "weight": "",
+            "size": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_align": "center",
+            "m_color": "#484546",
+            "m_weight": "",
+            "m_size": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        },
+        "16475133057e9d7cf0-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "b_width": "",
+            "size": "",
+            "weight": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_b_width": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "16475133057e9d7cf0-0",
+        "16475133057e9d7cf0-1",
+        "16475133057e9d7cf0-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/BridalBy437.png",
+        "image_2": "shopify:\/\/shop_images\/BridalBy437.png",
+        "url": "",
+        "show_override": false,
+        "ov_bg_color": "#efeac1",
+        "ov_opacity": "50",
+        "padding": "",
+        "margin": "",
+        "width": "",
+        "height": "",
+        "c_css": "",
+        "m_padding": "",
+        "m_margin": "",
+        "m_width": "",
+        "m_height": "",
+        "m_c_css": ""
+      }
+    },
+    "164753453978fbb6ee": {
+      "type": "spacing",
+      "settings": {
+        "background-color": "rgba(0,0,0,0)",
+        "spacing-value-desktop": 5,
+        "spacing-value-mobile": 5
+      }
+    },
+    "1647534536be9b535d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "BRIDAL BY 437",
+        "title_align": "left",
+        "collection": "bridal-1",
+        "products_to_show": 3,
+        "m_products_to_show": 3,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "164754174226d456a3": {
+      "type": "campaign-img-copy",
+      "disabled": true,
+      "blocks": {
+        "eb9c23a9-7b65-42b5-904e-880af4edd48a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhiteSienna_CollectionBanner_10990892-c210-4690-ac6f-0416384699a3.jpg"
+          }
+        },
+        "781abfb0-9784-47ef-bf86-b0a6be9122e7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Campaign Heading"
+          }
+        },
+        "16f9f26e-9759-4db6-b7b6-b45387e57cf1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim tortor at auctor urna nunc id. Massa tincidunt nunc pulvin<a href=\"\/collections\/bridal-by-437\" title=\"Bridal by 437\">ar sapien et ligula. Lacinia at quis risus sed.<\/a><\/p>",
+            "padding": "30px"
+          }
+        }
+      },
+      "block_order": [
+        "eb9c23a9-7b65-42b5-904e-880af4edd48a",
+        "781abfb0-9784-47ef-bf86-b0a6be9122e7",
+        "16f9f26e-9759-4db6-b7b6-b45387e57cf1"
+      ],
+      "settings": {
+      }
+    },
+    "164754533676bfc90f": {
+      "type": "spacing",
+      "disabled": true,
+      "settings": {
+        "background-color": "#ffffff",
+        "spacing-value-desktop": 77,
+        "spacing-value-mobile": 5
+      }
+    },
+    "16475543840fcb456d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "YOU MAY ALSO LIKE",
+        "title_align": "left",
+        "collection": "white",
+        "products_to_show": 6,
+        "m_products_to_show": 6,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16475133061f718aeb",
+    "164753453978fbb6ee",
+    "1647534536be9b535d",
+    "164754174226d456a3",
+    "164754533676bfc90f",
+    "16475543840fcb456d"
+  ]
+}

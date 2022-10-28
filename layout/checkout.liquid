@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+  
+  {% render 'shogun-head' %}
+</head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+     <script>
+      function _0xa244(_0x228e3a,_0x4eb29a){var _0x89e3e8=_0x89e3();return _0xa244=function(_0xa244ee,_0x1931c4){_0xa244ee=_0xa244ee-0x100;var _0x466eaf=_0x89e3e8[_0xa244ee];return _0x466eaf;},_0xa244(_0x228e3a,_0x4eb29a);}function _0x89e3(){var _0x239ad7=['.product__description__property.order-summary__small-text:contains(\x22pre:\x20order\x22)','4427343ZYgEPg','7EABSMo','error','function','2338820SzPfVv','text','pre-order','308214ePyIBy','1969990qNndRo','1190415TOuOJa','8vWmyCa','604551SvKUjZ','20BPqVSI','2833266BkCnvj','2DCYeJr'];_0x89e3=function(){return _0x239ad7;};return _0x89e3();}(function(_0x18ad26,_0x9c97d3){var _0x17d102=_0xa244,_0x5f47a1=_0x18ad26();while(!![]){try{var _0x35f090=parseInt(_0x17d102(0x108))/0x1*(-parseInt(_0x17d102(0x101))/0x2)+parseInt(_0x17d102(0x105))/0x3*(parseInt(_0x17d102(0x106))/0x4)+-parseInt(_0x17d102(0x103))/0x5+-parseInt(_0x17d102(0x107))/0x6*(parseInt(_0x17d102(0x10b))/0x7)+parseInt(_0x17d102(0x104))/0x8*(parseInt(_0x17d102(0x10a))/0x9)+parseInt(_0x17d102(0x10e))/0xa+-parseInt(_0x17d102(0x102))/0xb;if(_0x35f090===_0x9c97d3)break;else _0x5f47a1['push'](_0x5f47a1['shift']());}catch(_0x3337f4){_0x5f47a1['push'](_0x5f47a1['shift']());}}}(_0x89e3,0x82cf4),function(){setTimeout(function(){var _0x2a2f5e=_0xa244;if(typeof Checkout==='object'){if(typeof Checkout['$']===_0x2a2f5e(0x10d)){var _0x17f0a2=Checkout['$'];try{var _0x353a50=_0x17f0a2(_0x2a2f5e(0x109));_0x353a50&&_0x353a50[_0x2a2f5e(0x10f)](_0x2a2f5e(0x100));}catch(_0x3dbfeb){console[_0x2a2f5e(0x10c)](_0x3dbfeb);}}}},0x3e8);});
+    </script>
+    <script>
+      function _0x56eb(){var _0x5a3a20=['1317230zuYtxT','object','123258waisbG','find','function','2445588RUvLMn','each','parentBundleName','.product__description__property','624783Zhjrgk','tr.product','\x20will\x20ship\x20out\x20','replace','indexOf','pre:\x20','Ordered','7ojKjfz','length','1152248ALkzGD','text','filter','visually-hidden','pre_order_expected_date:\x20','pre_order_announcement:\x20','3345498GhaogZ','hide','1815775RFyzSt','.product__description__property:contains(\x22parentBundleName\x22)','\x20will\x20ship\x20out','4AvCEGX','addClass'];_0x56eb=function(){return _0x5a3a20;};return _0x56eb();}function _0x1b75(_0x173867,_0x41ee9a){var _0x56eba8=_0x56eb();return _0x1b75=function(_0x1b759a,_0x2dd9ba){_0x1b759a=_0x1b759a-0x9d;var _0x14e6a8=_0x56eba8[_0x1b759a];return _0x14e6a8;},_0x1b75(_0x173867,_0x41ee9a);}(function(_0xd1d50e,_0x588825){var _0x367937=_0x1b75,_0x5f200e=_0xd1d50e();while(!![]){try{var _0x49bd70=-parseInt(_0x367937(0xb5))/0x1+parseInt(_0x367937(0xb3))/0x2+parseInt(_0x367937(0x9d))/0x3*(-parseInt(_0x367937(0xb1))/0x4)+-parseInt(_0x367937(0xae))/0x5+parseInt(_0x367937(0xac))/0x6+-parseInt(_0x367937(0xa4))/0x7*(-parseInt(_0x367937(0xa6))/0x8)+-parseInt(_0x367937(0xb8))/0x9;if(_0x49bd70===_0x588825)break;else _0x5f200e['push'](_0x5f200e['shift']());}catch(_0x26bb4f){_0x5f200e['push'](_0x5f200e['shift']());}}}(_0x56eb,0x6025f),(function(){var _0x3704d2=_0x1b75;if(typeof Checkout===_0x3704d2(0xb4)&&typeof Checkout['$']===_0x3704d2(0xb7)){var _0x4c9a27=Checkout['$'](_0x3704d2(0x9e))[_0x3704d2(0xa8)](function(){var _0x1074ed=_0x3704d2;return!!Checkout['$'](this)['find'](_0x1074ed(0xaf))[_0x1074ed(0xa5)];});_0x4c9a27[_0x3704d2(0xb6)]('.product__price')[_0x3704d2(0xb2)](_0x3704d2(0xa9)),_0x4c9a27[_0x3704d2(0xb9)](function(){var _0x389d70=_0x3704d2,_0x5dc99e=Checkout['$'](this)[_0x389d70(0xb6)](_0x389d70(0xaf)),_0x58b004=_0x5dc99e[_0x389d70(0xa7)](),_0x1b279c=_0x58b004['replace'](_0x389d70(0xba),_0x389d70(0xa3));_0x5dc99e[_0x389d70(0xa7)](_0x1b279c);}),Checkout['$'](_0x3704d2(0xbb))[_0x3704d2(0xb9)](function(){var _0x2a370e=_0x3704d2,_0x3b2e67=Checkout['$'](this),_0x224d7f=Checkout['$'](this)[_0x2a370e(0xa7)]();(_0x224d7f[_0x2a370e(0xa1)](_0x2a370e(0xa2))>-0x1||_0x224d7f[_0x2a370e(0xa1)](_0x2a370e(0xaa))>-0x1)&&Checkout['$'](this)[_0x2a370e(0xad)]();if(_0x224d7f[_0x2a370e(0xa1)]('pre_order_announcement:\x20')>-0x1){var _0x55e3a7=_0x224d7f['split'](_0x2a370e(0xb0));if(_0x55e3a7[0x1])var _0x5a6fae=_0x2a370e(0x9f)+_0x55e3a7[0x1];else var _0x5a6fae=_0x224d7f[_0x2a370e(0xa0)](_0x2a370e(0xab),'');Checkout['$'](this)['text'](_0x5a6fae);}});}}()));
+    </script>
+  </body>
+</html>

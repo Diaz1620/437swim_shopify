@@ -1,0 +1,627 @@
+{{ 'section-image-banner-blog.css' | asset_url | stylesheet_tag }}
+
+<div id="Banner-{{ section.id }}" class="banner hero_banner"  {%- if section.settings.url != blank -%} aria-href=" {{ section.settings.url }}" style="cursor: pointer;"  {% endif %}> 
+  
+      {%- if section.settings.image != blank -%}
+        <div class="{% if section.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} small-hide{% endif %}" />
+          <img srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+            {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
+            {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
+            {%- if section.settings.image.width >= 2800 -%}{{ section.settings.image | img_url: '2800x' }} 2800w{%- endif -%}"
+            sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
+            src="{{ section.settings.image | img_url: '750x' }}"
+            {% if section.id != 'template--14273901166634__image_banner' %}loading="lazy"{% endif %}
+            alt="{{ section.settings.image.alt | escape }}"
+          >
+        </div>
+      {%- elsif section.settings.image_2 == blank -%}
+        <div class="media placeholder">
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.image_2 != blank -%}
+        <div class="large-up-hide medium-hide">
+          <img srcset="{%- if section.settings.image_2.width >= 375 -%}{{ section.settings.image_2 | img_url: '375x' }} 375w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 750 -%}{{ section.settings.image_2 | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 1100 -%}{{ section.settings.image_2 | img_url: '1100x' }} 1100w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 1500 -%}{{ section.settings.image_2 | img_url: '1500x' }} 1500w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 1780 -%}{{ section.settings.image_2 | img_url: '1780x' }} 1780w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 2000 -%}{{ section.settings.image_2 | img_url: '2000x' }} 2000w,{%- endif -%}
+            {%- if section.settings.image_2.width >= 2800 -%}{{ section.settings.image_2 | img_url: '2800x' }} 2800w{%- endif -%}"
+            sizes="{% if section.settings.image != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image != blank %}50vw{% else %}100vw{% endif %}"
+            src="{{ section.settings.image_2 | img_url: '750x' }}"
+            {% if section.id != 'template--14273901166634__image_banner' %}loading="lazy"{% endif %}
+            alt="{{ section.settings.image_2.alt | escape }}" />
+        </div>
+      {%- endif -%}
+      <div class="banner__content banner__content-{{ section.id }} page-width">
+        {%- render 'style', sufix: '.banner__content', id: section.id, style: section.settings -%}
+        <div class="banner__box">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'heading' -%}
+                <h2 class="banner__heading h1 color-white" id="banner__heading-{{ block.id }}">
+                  {{ block.settings.heading }}
+                </h2>
+                {%- render 'style', sufix: '#banner__heading', id: block.id, style: block.settings -%}
+              {%- when 'text' -%}
+                <div class="banner__text color-white" id="banner__text-{{ block.id }}">
+                  {{ block.settings.text }}
+                </div>
+                {%- render 'style', sufix: '#banner__text', id: block.id, style: block.settings -%}
+              {%- when 'buttons' -%}
+                <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}">
+                  {%- if block.settings.button_label_1 != blank -%}
+                    <a id="bunner__button-{{ block.id }}" href="{{ block.settings.button_link_1 }}" class="button button--primary"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>
+                      {{ block.settings.button_label_1 }}
+                    </a>
+                    {%- render 'style', sufix: '#bunner__button', id: block.id, style: block.settings -%}
+                  {%- endif -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+     
+</div>
+<script>
+  if(document.getElementsByClassName('hero_banner').length>0){
+    var HSL = document.getElementsByClassName("hero_banner");
+    var i;
+
+    for (i = 0; i < HSL.length; i++) {
+      if(HSL[i].getAttribute('aria-href')!=null)
+      HSL[i].addEventListener("click", function() {
+        window.location.href = this.getAttribute('aria-href');
+      });
+    }
+  }
+</script>
+{% schema %}
+{
+  "name": "Hero Banner Blog",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Dsktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Override"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_override",
+      "label": "Show Override",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "ov_bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "ov_bg_image",
+      "label": "Background"
+    },
+    {
+      "type": "text",
+      "id": "ov_opacity",
+      "label": "Opacity"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Settings"
+    },
+    {
+      "type": "text",
+      "id": "padding",
+      "label": "Padding"
+    },
+    {
+      "type": "text",
+      "id": "margin",
+      "label": "Margin"
+    },
+    {
+      "type": "text",
+      "id": "width",
+      "label": "Width"
+    },
+    {
+      "type": "text",
+      "id": "height",
+      "label": "Height"
+    },
+    {
+      "type": "textarea",
+      "id": "c_css",
+      "label": "Custom CSS"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    
+    {
+      "type": "text",
+      "id": "m_padding",
+      "label": "Padding"
+    },
+    {
+      "type": "text",
+      "id": "m_margin",
+      "label": "Margin"
+    },
+    {
+      "type": "text",
+      "id": "m_width",
+      "label": "Width"
+    },
+    {
+      "type": "text",
+      "id": "m_height",
+      "label": "Height"
+    },
+    {
+      "type": "textarea",
+      "id": "m_c_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Text Aligment"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "c_css",
+          "label": "Custom CSS"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "select",
+          "id": "m_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Text Aligment"
+        },
+        {
+          "type": "color",
+          "id": "m_color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "m_weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "m_size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "m_padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "m_margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "m_width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "m_height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "m_c_css",
+          "label": "Custom CSS"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-banner.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+          "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Text Aligment"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "c_css",
+          "label": "Custom CSS"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "select",
+          "id": "m_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Text Aligment"
+        },
+        {
+          "type": "color",
+          "id": "m_color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "m_weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "m_size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "m_padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "m_margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "m_width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "m_height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "m_c_css",
+          "label": "Custom CSS"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "color",
+          "id": "bg",
+          "label": "Background Color"
+        },
+        {
+          "type": "color",
+          "id": "border",
+          "label": "border Color"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "b_width",
+          "label": "Border Width"
+        },
+        {
+          "type": "text",
+          "id": "size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "c_css",
+          "label": "Custom CSS"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "color",
+          "id": "m_bg",
+          "label": "Background Color"
+        },
+        {
+          "type": "color",
+          "id": "m_border",
+          "label": "border Color"
+        },
+        {
+          "type": "color",
+          "id": "m_color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "m_b_width",
+          "label": "Border Width"
+        },
+        {
+          "type": "text",
+          "id": "m_size",
+          "label": "Font Size"
+        },
+        {
+          "type": "text",
+          "id": "m_weight",
+          "label": "Font Weight"
+        },
+        {
+          "type": "text",
+          "id": "m_padding",
+          "label": "Padding"
+        },
+        {
+          "type": "text",
+          "id": "m_margin",
+          "label": "Margin"
+        },
+        {
+          "type": "text",
+          "id": "m_width",
+          "label": "Width"
+        },
+        {
+          "type": "text",
+          "id": "m_height",
+          "label": "Height"
+        },
+        {
+          "type": "textarea",
+          "id": "m_c_css",
+          "label": "Custom CSS"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner Blog",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

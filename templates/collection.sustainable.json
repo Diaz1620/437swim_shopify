@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "6c14fd5b-07d0-4a2b-9de6-d3167a51ad1a": {
+          "type": "collection",
+          "settings": {
+            "coll": "",
+            "show_collection_title": true,
+            "show_collection_description": false,
+            "image": "shopify:\/\/shop_images\/CollectionPage_DesktopGif0.gif",
+            "m_image": "shopify:\/\/shop_images\/CollectionPage_MobileGif.gif",
+            "countdown": "2022-01-24T15:00:00",
+            "show_override": false,
+            "ov_bg_color": "",
+            "color": "#ffffff",
+            "ov_opacity": ""
+          }
+        }
+      },
+      "block_order": [
+        "6c14fd5b-07d0-4a2b-9de6-d3167a51ad1a"
+      ],
+      "settings": {
+      }
+    },
+    "email": {
+      "type": "main-collection-email-banner",
+      "blocks": {
+        "f5ba7260-e1c2-4021-a42e-652601edf59d": {
+          "type": "collection",
+          "settings": {
+            "coll": "",
+            "show_title": false,
+            "show_desc": true,
+            "form": "<div class=\"klaviyo-form-XJxV7B\"><\/div>",
+            "w_height": "200px",
+            "w_bg_color": "#794842",
+            "w_bg_image": "shopify:\/\/shop_images\/EmailSignUp_Desktop.jpg",
+            "w_bg_style": "cover",
+            "w_horizontal": "center",
+            "w_vertical": "center",
+            "c_width": "100%",
+            "c_align": "center",
+            "c_padding": "0 25px",
+            "t_size": "",
+            "t_weight": "",
+            "t_margin": "0 0 20px 0",
+            "t_color": "",
+            "w_m_height": "30vh",
+            "w_m_bg_color": "",
+            "w_m_bg_image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-07_at_3.27.04_PM.png",
+            "w_m_bg_style": "cover",
+            "w_m_horizontal": "center",
+            "w_m_vertical": "center",
+            "c_m_width": "",
+            "c_m_align": "center",
+            "c_m_padding": "0 15px",
+            "t_m_size": "",
+            "t_m_weight": "",
+            "t_m_margin": "0 0 20px 0",
+            "t_m_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5ba7260-e1c2-4021-a42e-652601edf59d"
+      ],
+      "settings": {
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "6a937439-7294-4e01-b2e7-7aeb8ec869e6": {
+          "type": "filter",
+          "settings": {
+            "label": "Type",
+            "tag_prefix": "C_TYPES_",
+            "tags": "TOPS|BOTTOMS|ONEPIECES|COVERUP|REVERSIBLE"
+          }
+        },
+        "54c8a946-7605-403a-98eb-58d331a84a4a": {
+          "type": "filter",
+          "settings": {
+            "label": "FABRIC",
+            "tag_prefix": "C_FABRICS_",
+            "tags": "CLASSIC|MESH|437 SMOOTH™"
+          }
+        },
+        "a7e2d480-c317-4dc2-9f3b-3790cc6023bc": {
+          "type": "filter",
+          "settings": {
+            "label": "COVERAGE",
+            "tag_prefix": "C_COVERAGES_",
+            "tags": "THONG|CHEEKY|MID|FULL"
+          }
+        },
+        "3c1877f3-82fd-419e-8421-92c534807f30": {
+          "type": "filter",
+          "settings": {
+            "label": "Colors",
+            "tag_prefix": "",
+            "tags": "persia|cocoa|espresso|off-white|gold|espresso-ii|paradiso|aqua|natural|zebra|python|y2k|stunning-queen|flora|valencia|pomelo|rose-water|cream|bloom|buttercream|espresso"
+          }
+        }
+      },
+      "block_order": [
+        "6a937439-7294-4e01-b2e7-7aeb8ec869e6",
+        "54c8a946-7605-403a-98eb-58d331a84a4a",
+        "a7e2d480-c317-4dc2-9f3b-3790cc6023bc",
+        "3c1877f3-82fd-419e-8421-92c534807f30"
+      ],
+      "settings": {
+        "products_per_page": 48,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "show_colors": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "email",
+    "product-grid"
+  ]
+}

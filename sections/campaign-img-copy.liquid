@@ -1,0 +1,95 @@
+{{ 'component-campaign-img-copy.css' | asset_url | stylesheet_tag }}
+
+<div id="campaign-{{ section.id}}" class="campaign">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'image' -%}
+                <div class="campaign-img">
+                    <img src="{{ block.settings.image | img_url: '750x' }}" />
+                </div>
+        {%- endcase -%}
+    {%- endfor -%}
+    <div class="campaign-content campaign">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'heading' -%}
+                <div class="campaign-content-heading">
+                    <h2 class="h1">{{ block.settings.heading}}</h3>
+                </div>
+            {%- when 'text' -%}
+                <div style="padding: 0 {{block.settings.padding}}" class="campaign-content-text">
+                    <p>{{ block.settings.text }}</p>
+                </div>
+        {%- endcase -%}
+    {%- endfor -%}
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "t:sections.campaign.name",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "blocks": [
+      {
+          "type": "heading",
+          "name": "Campaign Heading",
+          "limit": 1,
+          "settings": [
+              {
+                "type": "text",
+                "id": "heading",
+                "default": "Campaign Heading",
+                "label": "Type your heading here"
+              }
+          ]
+      },
+      {
+          "type": "text",
+          "name": "Campaign Body",
+          "settings": [
+              {
+                  "type": "richtext",
+                  "id": "text",
+                  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim tortor at auctor urna nunc id. Massa tincidunt nunc pulvinar sapien et ligula. Lacinia at quis risus sed.</p>",
+                  "label": "Type your body text here"
+              },
+              {
+                  "type": "text",
+                  "id": "padding",
+                  "default": "30px",
+                  "label": "Left/Right padding for body of text. Examples: 20px, 2rem, etc"
+              }
+          ]
+      },
+      {
+          "type": "image",
+          "name": "Campaign Image",
+          "settings": [
+              {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Select campaign image"
+              }
+          ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "Campaign",
+      "blocks": [
+          {
+              "type": "image"
+          },
+          {
+              "type": "heading"
+          },
+          {
+              "type": "text"
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

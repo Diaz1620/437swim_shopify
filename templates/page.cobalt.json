@@ -1,0 +1,495 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16621202366c8ddb14": {
+      "type": "image-banner",
+      "blocks": {
+        "1662120234daf5f173-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Test aasdfasdfasdf",
+            "align": "center",
+            "color": "#ffffff",
+            "weight": "",
+            "size": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_align": "center",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        },
+        "1662120234daf5f173-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "SHOP COBALTsdf",
+            "button_link_1": "shopify:\/\/collections\/cobalt",
+            "bg": "#9d9d9d",
+            "border": "#5bc7d2",
+            "color": "#ccb587",
+            "b_width": "",
+            "size": "",
+            "weight": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_b_width": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        },
+        "a3610edf-dd0b-448f-985c-56e22df54afb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+            "align": "center",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "padding": "",
+            "margin": "",
+            "width": "",
+            "height": "",
+            "c_css": "",
+            "m_align": "center",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662120234daf5f173-0",
+        "1662120234daf5f173-2",
+        "a3610edf-dd0b-448f-985c-56e22df54afb"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_e299f08b-81c1-4ead-a6a3-4257d4e330ce.jpg",
+        "image_2": "shopify:\/\/shop_images\/11_9ab8bcc8-253d-45c7-863d-8ce32332a4db.jpg",
+        "url": "shopify:\/\/collections\/cobalt",
+        "show_override": false,
+        "ov_bg_color": "#000000",
+        "ov_opacity": "0%",
+        "pv": "center",
+        "ph": "center",
+        "align": "center",
+        "padding": "4rem 0",
+        "margin": "",
+        "width": "",
+        "height": "",
+        "c_css": "",
+        "m_pv": "center",
+        "m_ph": "center",
+        "m_align": "center",
+        "m_padding": "",
+        "m_margin": "",
+        "m_width": "",
+        "m_height": "",
+        "m_c_css": ""
+      }
+    },
+    "166266009431e7a4b6": {
+      "type": "spacing",
+      "disabled": true,
+      "settings": {
+        "background-color": "#ffffff",
+        "spacing-value-desktop": 35,
+        "spacing-value-mobile": 20
+      }
+    },
+    "16625612380904241d": {
+      "type": "shop-the-look",
+      "blocks": {
+        "f52033e9-2e03-479c-9fe3-566d3cca91cd": {
+          "type": "slide",
+          "settings": {
+            "collection": "",
+            "collection_image_alt": "shopify:\/\/shop_images\/Facetune_07-09-2022-15-13-54.jpg",
+            "alt_url": "",
+            "image_title": "<p>NEW STYLE<\/p>",
+            "image_title_color": "",
+            "image_title_font_size": 16,
+            "shop_button_text": "",
+            "shop_button_font_color": "",
+            "shop_button_font_size": 16,
+            "product_one": "the-sanders-top-cobalt",
+            "product_two": "the-sanders-bottoms-cobalt"
+          }
+        }
+      },
+      "block_order": [
+        "f52033e9-2e03-479c-9fe3-566d3cca91cd"
+      ],
+      "settings": {
+        "shop_look_title": "Introducing Kenzie x Aubrey Set in Cobalt",
+        "section_title_font_size": 24
+      }
+    },
+    "1662399098c3872e03": {
+      "type": "collection-see",
+      "blocks": {
+        "16623990980a7fd46f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_6910598e-4939-4532-81f8-c3c118081724.jpg",
+            "title": "@BAILEYCLARKX in Hvar, Croatia",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP SANDERS SET IN COBALT",
+            "button_link": "shopify:\/\/products\/the-sanders-bottoms-cobalt"
+          }
+        },
+        "16623990980a7fd46f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_7f28c21d-cfe0-495b-b51e-916be6a6dba9.jpg",
+            "title": "@YASEMINDOGARR in Costa Blanca, Spain",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP SANDERS SET IN COBALT",
+            "button_link": "shopify:\/\/products\/the-sanders-top-cobalt"
+          }
+        },
+        "16623990980a7fd46f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14_726c5b42-37d7-4ff3-bb64-78d84697df6c.jpg",
+            "title": "@MAKAYLAANISA in Vancouver, Canada",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP SANDERS SET IN COBALT",
+            "button_link": "shopify:\/\/products\/the-sanders-bottoms-cobalt"
+          }
+        },
+        "16623990980a7fd46f-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_b005e24a-b18d-4c7d-94d3-963e9c5eae50.jpg",
+            "title": "@CARLITAKADS in Porto Colom, Spain",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP SANDERS SET IN COBALT",
+            "button_link": "shopify:\/\/products\/the-sanders-top-cobalt"
+          }
+        },
+        "16623990980a7fd46f-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13_debd8773-1d14-4e1d-a79e-a2f6ecdd7d2c.jpg",
+            "title": "@SABRINEWAITKUS in Mallorca, Spain",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/products\/the-v-short-matcha"
+          }
+        },
+        "16623990980a7fd46f-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12_354a8e45-c06d-4565-bd2a-e23dd1067251.jpg",
+            "title": "@NATALIE.KHRAICH in Puerto Vallarta, Mexico",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP SANDERS SET IN COBALT",
+            "button_link": "shopify:\/\/products\/the-sanders-top-cobalt"
+          }
+        }
+      },
+      "block_order": [
+        "16623990980a7fd46f-0",
+        "16623990980a7fd46f-1",
+        "16623990980a7fd46f-2",
+        "16623990980a7fd46f-3",
+        "16623990980a7fd46f-4",
+        "16623990980a7fd46f-5"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "1662387131fda990a9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "BACK IN STOCK",
+        "title_align": "center",
+        "collection": "cobalt",
+        "products_to_show": 2,
+        "m_products_to_show": 2,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "1662396599e47d9d98": {
+      "type": "partners",
+      "blocks": {
+        "1662396599d8180d68-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Coveteur.jpg",
+            "title": "AS SEEN IN",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "1662396599d8180d68-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Forbes_19369350-f771-4d58-85c8-1e4d70c17206.png",
+            "title": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "1662396599d8180d68-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vogue_934335f9-9abc-44fc-a049-70b28f980c01.png",
+            "title": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "333fdbb4-54f7-445c-8931-be9e0b991969": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30Under30.png",
+            "title": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "d67ac153-34c8-4529-b466-2dc998132f86": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NewYorkTimes_c35a9da9-7043-4f8e-b42e-97517b931e52.png",
+            "title": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "f9a15663-de91-45fe-99b5-e85d6e2e08a2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HypeBae_99b5d1d0-e7e3-4146-b3eb-3a1d2bad6d51.png",
+            "title": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662396599d8180d68-0",
+        "1662396599d8180d68-1",
+        "1662396599d8180d68-2",
+        "333fdbb4-54f7-445c-8931-be9e0b991969",
+        "d67ac153-34c8-4529-b466-2dc998132f86",
+        "f9a15663-de91-45fe-99b5-e85d6e2e08a2"
+      ],
+      "settings": {
+        "button_label": "",
+        "button_link": "",
+        "bg": "",
+        "border": "",
+        "color": "",
+        "size": "",
+        "weight": "",
+        "width": "",
+        "m_bg": "",
+        "m_border": "",
+        "m_color": "",
+        "m_size": "",
+        "m_weight": "",
+        "m_width": ""
+      }
+    },
+    "1662398284143a0ca3": {
+      "type": "collection-our",
+      "disabled": true,
+      "blocks": {
+        "1662398284bfac0397-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13_debd8773-1d14-4e1d-a79e-a2f6ecdd7d2c.jpg",
+            "title": "Luxe Fabrics",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>If you haven't felt our 437 fabric yet, you're in for a treat. We pride ourselves on creating luxe swimwear and apparel that uses the highest quality fabrics designed to flatter the body.<\/p>",
+            "button_link": ""
+          }
+        },
+        "1662398284bfac0397-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sustainable.jpg",
+            "title": "Flattering Cuts",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>We design every 437 piece with your curves in mind. Our pieces are cut to have the most figure flattering fits on the market - elongating legs, accentuating curves and hugging you in all the right places.<\/p>",
+            "button_link": ""
+          }
+        },
+        "1662398284bfac0397-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_7d8bcc0d-fe44-44d8-be48-5890894bff26.png",
+            "title": "Sustainable",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>If you haven't felt our 437 fabric yet, you're in for a treat. We pride ourselves on creating luxe swimwear and apparel that uses the highest quality fabrics designed to flatter the body.<\/p>",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662398284bfac0397-0",
+        "1662398284bfac0397-1",
+        "1662398284bfac0397-2"
+      ],
+      "settings": {
+        "title": "Designed to move with you.",
+        "color": "",
+        "weight": "",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "166265992431fbc5d7": {
+      "type": "apps",
+      "blocks": {
+        "f5454ed0-da13-45f1-be70-bc22a1d33ed2": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-gallery-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 0,
+            "itemsPerView": 5,
+            "imageRatio": "1",
+            "reviewerNameColor": "#ffffff",
+            "starsColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": "the-sanders-bottoms-cobalt"
+          }
+        }
+      },
+      "block_order": [
+        "f5454ed0-da13-45f1-be70-bc22a1d33ed2"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16621202366c8ddb14",
+    "166266009431e7a4b6",
+    "16625612380904241d",
+    "1662399098c3872e03",
+    "1662387131fda990a9",
+    "1662396599e47d9d98",
+    "1662398284143a0ca3",
+    "166265992431fbc5d7"
+  ]
+}

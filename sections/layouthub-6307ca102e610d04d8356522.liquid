@@ -1,0 +1,622 @@
+{% comment %}
+ LayoutHub (https://layouthub.com)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from LayoutHub
+ {% endcomment %} 
+ <div class="lh-sections-wrapper" data-id="6307ca102e610d04d8356522" data-type="page">
+<section id="" data-section-id="jHteMwbUJQ" data-section="banner-27" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="lh-banner" >
+    <div class="lh-container">
+        <div class="lh-row">
+            <div class="lh-col-md-6">
+                <div class="lh-banner-txt">
+                    <p class="lh-txt-top"  data-lhi="txt_title_top" data-lh-lang>1 TOP, 12+ WAYS TO WEAR</p>
+                    <h3 class="lh-main-title"  data-lhi="txt_title" data-lh-lang>THE KENZIE TOP</h3>
+                    <div class="lh-price">
+                       <del class="lh-price-old"  data-lhi="txt_price_old" data-lh-lang></del>
+                       <span class="lh-price-new"  data-lhi="txt_price" data-lh-lang>Feel your best in our VIRAL, CULT-FAVOURITE, 5-STAR Kenzie Top. Our bikinis are made of the most luxurious fabric that feels buttery smooth on your skin. The flattering cuts will give you the ultimate confidence.</span>
+                    </div>
+                   
+                        <p class="lh-btn-main"  data-lhi="btn_link" data-lh-lang data-lhi-child="a"><a href="#" data-ga-action="tracking" data-ga-label="Button" data-lhlink>SHOP NOW <i class="lni lni-chevron-right-circle"></i></a></p>   
+                    
+                </div>
+            </div>
+            <div class="lh-col-md-6">
+                <div class="lh-banner-img">
+                    <p class="lh-img-ex"  data-lhi="img_ex"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/img-1559_npDg.JPG?v=1661445861" /></p>
+                    <div class="lh-pos"> 
+                        <p class="lh-txt-dis"  data-lhi="txt_discount" data-lh-lang></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>  </section><section id="" data-section-id="VxTjIrCYq6" data-section="product-detail-41" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+
+<!--  Product single Swatch images -->
+{%- assign tpl =  template | replace: '.', ' ' | truncatewords: 1, '' | handle  -%}
+		 	 
+		 		{%- comment -%} Assign product when not in product page {%- endcomment -%}
+		 		{%- assign p  = all_products['the-kenzie-top-black']  -%}
+		 		{%- if  p.id != ""  and tpl != 'product' -%}
+		 			{% assign product  = p  %}
+		 		{%- endif -%}
+		 	 
+
+			{% assign first_variant = product.selected_or_first_available_variant %}{%- assign color_names = '' | split: ',' -%}
+		{%- assign color_names_downcase = '' | split: ',' -%}
+		{%- assign color_values = '' | split: ','  -%}
+		{%- if shop.metafields.layouthub and shop.metafields.layouthub.colors and shop.metafields.layouthub.colors contains '|' -%}
+			{% assign colors = shop.metafields.layouthub.colors | split: '|' %}
+			{%- assign color_names = colors | first | strip | split: ',' -%}
+			{%- assign color_names_downcase = colors | first | strip | downcase | split: ',' -%}
+			{%- assign color_values = colors | last | strip | split: ',' -%}
+		 {%- endif -%}<div  class="lh-wrapper lh-product-single" data-pid="{{- product.id -}}" data-money-format='{{shop.money_format | url_encode }}' data-vid_url="{%- if tpl != 'product' -%}
+				{%- assign vid_url = false -%}
+			{%- else -%}
+				{%- assign vid_url = true -%}
+			{%- endif -%}
+			{{- vid_url -}}">
+		<div class="lh-container">
+			<p class="lh-txt-main"  data-lhi="txt_title_top" data-lh-lang>OVER 30,000 SOLD</p>
+            <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang>THE KENZIE TOP</h3>
+			<div class="lh-details-product">
+				<div class="lh-row lh-align-start">
+					<div class="lh-col-md-6 lh-product-sync-images use-zoom-no lh-promote-no" data-hub-attr-state="class%3D%22lh-col-md-6%20lh-product-sync-images%20use-zoom-%257B%253A%257Bsection.settings.use_zoom%257D%253A%257D%20lh-promote-%257B%253A%257Bsection.settings.show_badge%257D%253A%257D%22"  data-hub-attr-use_zoom  data-hub-attr-show_badge >
+						<include data-live-use_zoom data-name="product-images" data-id="1">  
+ <div class="lh-details-images">
+  <div class="lh-big-slide" >
+        <div class="lh-big_slide-lg">
+              <div class="lh-label lh-absolute">
+				{%- assign compare_at_price = product.compare_at_price -%}
+				{%- assign price = product.price -%}
+				{%- assign price_varies = product.price_varies -%}
+				{%- assign available = product.available -%}
+				{%-assign on_new = false-%}
+				{%-unless product.tags contains 'notnew'%}
+						{%-assign now_date_int = "now" | date: "%j" | plus: 0-%}
+						{%-assign now_year_int = "now" | date: '%Y' | plus: 0-%}
+						{%-assign pub_date_int = product.published_at | date: "%j" | plus: 0-%}
+						{%-assign pub_year_int = product.published_at | date: '%Y' | plus: 0-%}
+						{%-if now_year_int == pub_year_int-%}
+							{%-assign new_day_int = 30 -%}
+							{%-assign check_new = now_date_int | minus: pub_date_int-%}
+							{%-if check_new >= 0 and check_new <= new_day_int-%}
+								<span class="lh-new_label"  data-lhi="trans_new" data-lh-lang>NEW</span>
+							{%-endif-%}
+						{%-else-%}
+							{%-assign new_day_int = 30 | plus: 366-%}
+							{%-assign check_new = now_date_int | plus: 366-%}
+							{%-if check_new <= new_day_int-%}
+											<span class="lh-new_label"  data-lhi="trans_new" data-lh-lang>NEW</span>
+							{%-endif-%}
+						{%-endif-%}
+				{%-endunless-%}
+				{%-assign on_sale = false-%}
+				{%-if first_variant.price < first_variant.compare_at_price and first_variant.available -%}
+					{%-unless product.tags contains 'notsale'-%}
+					{%-assign on_sale = true-%}
+					{%-endunless-%}
+				{%-endif-%}
+				{%-assign sold_out = true-%}
+				{%-unless available == false-%}
+					{%-assign sold_out = false-%}
+				{%-endunless-%}
+				<span class="lh-sale_label" style="display: {%- if on_sale -%}block{%- else -%}none{%- endif -%}"  data-lhi="trans_sale" data-lh-lang>SALE</span>
+				{%- if sold_out -%}
+					<span class="lh-soldout_label"  data-lhi="trans_sold_out" data-lh-lang>SOLD OUT</span>
+				{%- endif -%}
+			</div><div class=" block-slide-lg lh-slick-big swiper-container lh-reinit lh-showall">
+                <div class="swiper-wrapper">
+                  {%- for image in product.images -%}
+		          <div class="items-img swiper-slide zoom__image" data-variant_id="{{image.variants | map:'id' | join: ','}}" data-filter="{{image.alt}}">
+		                      <img src="{{ image | img_url: "master"}}" data-w="{{image.width}}" data-h="{{image.height}}" data-bigimg="{{ image | img_url: "master"}}" alt="{{ image.alt}}">
+		                  </div>
+		        {%- endfor -%}</div>
+              </div>
+              <div class="lh-slide-lg-nav">
+                  <div class="swiper-button-prev">
+                  </div>
+                  <div class="swiper-button-next">
+                  </div>
+              </div>
+    </div>
+  </div>
+
+</div>
+ 
+  </include></div>
+
+					<form class="lh-col-md-6 lh-summary lh-product-form {% if product.variants.size > 1%} lh-form-product-variants{% else %} lh-form-product-variant {% endif%}" method="POST" accept-charset="utf-8" enctype="multipart/form-data"  action="/cart/add" data-pid="{{- product.id -}}">
+						<div class="lh-content-summary" data-hidden="{% assign variant_slected = product.selected_or_first_available_variant %}
+				{% assign isHidden = true %}
+				{%- if variant_slected.available and variant_slected.price < variant_slected.compare_at_price -%}
+						{% assign isHidden = false %}
+				{%- endif -%}
+				{{isHidden}}">
+							 
+								<div class="lh-wrap-product-rating">
+							        {% render 'layouthub_review',  review_type: 'single' , product: product %}</div>
+								<div class="clearfix"></div>
+							 
+							<div class="lh-content-title">
+								<p class="product-name lh-product-title">
+									{{product.title}}</p>
+								<!-- <div class="lh-other-button">
+									 
+								 <include data-live-show_social data-live-items_social data-name="social" data-id="2">  
+  
+  </include></div> -->
+							</div>
+							<div class="clearfix"></div>
+							<span class="lh-price-block price ">
+								<div class="lh-group-price">
+		{%- if product.compare_at_price  > product.price  -%}
+			<span class="lh-compare-at-price">
+				<span class="lh-text">section.settings.txt_value</span>
+				<span class="lh-money">{%- if product.compare_at_price  > product.price  -%}{{ product.compare_at_price  | money }}{%- endif -%}</span>
+			</span>
+
+			<p class="lh-save">
+				<span class="lh-text">section.settings.txt_discount</span>
+			 	<span class="lh-money">{%- if first_variant.compare_at_price  > first_variant.price and first_variant.price > 0  -%}{{ first_variant.compare_at_price | minus: first_variant.price | times: 100 | divided_by: first_variant.compare_at_price | round: 2}}%{%- else -%}0%{%- endif -%}</span>
+		 	</p>
+	 	{%- endif -%}
+			<span class="lh-price">
+		    	<span class="lh-text">section.settings.txt_price </span>
+		    	<span class="lh-money">{{ product.price | money }}</span>
+		    </span>
+	    </div>
+	    <p class="lh-sold-out-title" style="display: none"><span  data-lhi="trans_outstock" data-lh-lang>OUT OF STOCK</span></p></span>
+							<div class="clearfix"></div>
+							<include data-live-product_introcude data-name="product-introduce" data-id="3">  
+ 
+<div class="lh-product-introduce">
+ 
+	<div class="lh-cus">
+			{{ product.description | truncatewords: 500}}</div>
+			 
+</div>
+
+  </include><div class="clearfix"></div>
+							<include data-live-show_attr data-live-enable_buynow data-live-trans_buynow data-live-trans_unavai data-live-trans_outstock data-live-txt_price data-live-txt_value data-live-txt_discount data-name="product-form" data-id="4">  
+ <form class="lh-product-form {% if product.variants.size > 1%} lh-form-product-variants{% else %} lh-form-product-variant {% endif%}" method="POST" accept-charset="utf-8" enctype="multipart/form-data"  action="/cart/add" data-pid="{{- product.id -}}">	
+ 
+	<div class="lh-wrap-variant" data-variants-size="">
+		{% assign variant_slected = product.selected_or_first_available_variant %}
+				{% assign arr_swatch = 'Color' | split: ',' %}
+				{%- if  arr_swatch.size > 0%}
+					{%- if product.variants.size >= 1%}
+					{%- for option in product.options -%}
+						{%- assign option_index = forloop.index0 -%}
+						{%- assign o = option | downcase -%}
+						{%- if arr_swatch contains option -%}
+							{%- assign index = 'option' | append: forloop.index -%}
+							 	<div class="lh-swatch-images  swatch-index lh-swatch-variations"  data-option-index="{{ option_index }}">
+										<div class="meta">
+											<label title="">{{ option }}: <span>{{variant_slected[index]}}</span>
+											</label>
+									 	</div>
+											<div class="lh-sizeguide-image">
+												<ul class="list-swatch-images">
+							         		{%- assign values = ""  -%}
+													{%- for variant in product.variants -%}
+														{%- assign option_value = variant[index] -%}
+														{%- assign option_value_downcase = variant[index] | downcase -%}
+														{%- if values != ""%}
+															{%- assign tmp = values | split: '|' -%}
+															{%- if tmp contains option_value_downcase  -%} {%- continue-%}{%- endif -%}
+															{%- assign values = values  | append:   '|' | append: option_value_downcase -%}
+														{%- else -%}
+															{%- assign values =   option_value_downcase -%}
+														{%- endif -%}
+														<li data-option-index="{{ option_index }}" data-lh-tooltip="{{option_value | escape}}" class="lh-swatch-select lh-tooltip_top lh-swatch-color {% if option_value == variant_slected[index] %} active{% endif %}" data-value="{{option_value | escape}}">
+															 
+																<span><img src="{{ variant | img_url: "100x100", crop: 'center' }}" alt="{{option_value}}">
+																</span>
+															 
+														</li>
+													{%- endfor -%}
+												</ul>
+
+											</div>
+
+							    </div>
+						{%- endif -%}
+					{%- endfor -%}
+					{%- endif -%}
+				{%- endif%}{%- if product.variants.size >= 1%}
+					{%- for option in product.options_with_values -%}
+					{%- assign option_index = forloop.index0 -%}
+						{%- assign o = option.name | downcase -%}
+						{%- if arr_swatch contains option.name or option.name == "Title" and product.options_with_values.size == 1 and option.values contains "Default Title" -%}
+							{%- continue -%}
+						{%- endif -%}
+						{%- assign index = 'option' | append: forloop.index -%}
+						<div class="lh-swatch-simple select-{{option.name | handleize }} select-size swatch-index lh-swatch-variations"  data-option-index="{{ option_index }}">
+					      <div class="meta">
+					         <label title="">{{ option.name }}:
+					         </label>
+					      </div>
+								<div class="lh-wrap-combobox">
+									<div class="lh-cb-main lh-relative">
+									<div class="lh-selected-text"></div>
+							      <ul class="list-swatch-items" >
+											{%- for value in option.values -%}
+												<li class="lh-swatch-select {% if value == variant_slected[index] %} active{% endif %}" data-value="{{value | escape}}"><span  title="{{value | escape}}" >{{ value}}</span></li>
+											{%- endfor -%}
+							      </ul>
+									</div>
+								</div>
+   						</div>
+					{%- endfor -%}
+				{%- endif -%}</div>
+	 
+	<div class="clearfix"></div>
+   <div class="lh-option-wrappers show-swatch-no" >
+       <select name="id"  id="product-select-{{- product.id -}}" style="display: none">
+          {%- assign current_variant = product.selected_or_first_available_variant -%}
+					{%- for variant in product.variants -%}
+		                {%- if variant.available -%}
+		                  <option {%  if variant == product.selected_or_first_available_variant   %} selected="selected" {%  endif  %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+		                {%- else -%}
+		                  <option disabled="disabled">
+		                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+		                  </option>
+		                {%- endif -%}
+		              {%- endfor -%}</select>
+    </div>
+	<div class="lh-form">
+		<div class="lh-quantity">	
+			<div class="lh-quantity-form quantity-form lh-flex lh-flex-wrap">
+			 	<div class="lh-quantity_form">
+					<div class="lh-control">
+						<input type="number" class="lh-input-qty lh-input-number lh-qty number "  name="quantity" value="1" min="1" max="{%- if current_variant.inventory_management != null -%}{{current_variant.inventory_quantity}}{%- else -%}999{%- endif -%}"><a href="javascript:;" class="lh-btn-number lh-qtyminus lh-quantity-minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown();this.parentNode.querySelector('input[type=number]').dispatchEvent(new Event('change'));return false"  title=""> </a>
+						 <a href="javascript:;" class="lh-btn-number lh-qtyplus lh-quantity-plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp();this.parentNode.querySelector('input[type=number]').dispatchEvent(new Event('change'));return false" title=""></a>
+					</div>
+			 	</div>
+			</div>
+		</div>
+	   	<div class="lh-cart-button-group">
+	   	
+			<div class="clearfix"></div>
+			 
+			<div class="lh-d-flex lh-flex-wrap lh-wrap-buynow">
+				    <button class="lh-buy-now bt lh-bt-primary lh-bt-type_01 lh-col"  data-lhi="trans_buynow" data-lh-lang>SHOP NOW <i class="lni lni-chevron-right-circle"></i></button>
+			</div>
+			 
+			
+	   </div>
+	</div>
+</form>
+{%- unless product == empty -%}
+							<script type="application/json" id="lh-product-json-{{product.id}}">
+							{
+							"id": {{product.id}},
+							"title": {{product.title | json}},
+							"handle": {{product.handle | json}},
+							"price": {{product.price| json}},
+							"price_min": {{product.price_min| json}},
+							"price_max": {{product.price_max| json}},
+							"available": {{product.available | json}},
+							"price_varies": {{product.price_varies| json}},
+							"compare_at_price": {{product.compare_at_price| json}},
+							"compare_at_price_min": {{product.compare_at_price_min| json}},
+							"compare_at_price_max": {{product.compare_at_price_max| json}},
+							"compare_at_price_varies": {{product.compare_at_price_varies| json}},
+							"variants": [
+							{%- for variant in product.variants -%}
+							{
+							"id": {{variant.id}},
+							"title": "{{variant.option1 | handleize }}{%- if product.options.size == 2 -%} / {%- endif -%}{{variant.option2 | handleize }}{%- if product.options.size == 3 -%} / {%- endif -%}{{variant.option3 | handleize }}",
+							"option1": {{variant.option1  | json}},
+							"option2": {%- if product.options.size == 1 -%}null{%-else-%}{{variant.option2  | json}}{%-endif-%},
+							"option3": {%- if product.options.size == 1 or product.options.size == 2 -%}null{%-else-%}{{variant.option3  | json}}{%-endif-%},
+							"sku": {{variant.sku | json}},
+							"requires_shipping": {{variant.requires_shipping}},
+							"taxable": {{variant.taxable |json}},
+							"featured_image": {%- if variant.image.id != blank -%}{
+									"id": {{variant.image.id | json}},
+									"product_id": {{product.id | json}},
+									"width": {{variant.image.width | json}},
+									"height": {{variant.image.height | json}},
+									"src": {{variant.image.src | json}},
+									"position":{{variant.image.position}}
+								}{%- else-%}null{%-endif-%},
+							"available": {{variant.available}},
+							"public_title": "{{variant.option1 | handleize }}{%- if product.options.size == 2 -%} / {%- endif -%}{{variant.option2 | handleize }}{%- if product.options.size == 3 -%} / {%- endif -%}{{variant.option3 | handleize }}",
+							"options":  {{variant.options | json}},
+							"price": {{variant.price| json}},
+							"weight": {{variant.weight| json}},
+							"compare_at_price": {{variant.compare_at_price | json}},
+							"inventory_quantity": {{variant.inventory_quantity | json}},
+							"inventory_management": {{variant.inventory_management | json}},
+							"inventory_policy": {{variant.inventory_policy | json}},
+							"barcode": {{variant.barcode | json}}
+							}{%- if forloop.last == false -%},{%- endif -%}
+							{%- endfor -%}
+							],
+							"featured_image": {{product.featured_image | json}},
+							"options": [
+							{%- for option in product.options -%}
+							{{ option | json}}{%- if forloop.last == false -%},{%- endif -%}
+							{%-endfor -%}
+							]
+							}
+							</script>
+						{%- endunless -%} 
+  </include><div class="clearfix"></div>
+							<include data-live-use_countdown data-live-label_countdown data-live-use_rand_countdown data-live-countdown data-live-cd_text_expire data-live-day data-live-hour data-live-min data-live-sec data-live-cd_text_expire data-name="countdown" data-id="5">  
+ 
+<div class="lh-wrap-countdown">
+  
+
+ </div> 
+     </include><div class="clearfix"></div>
+							
+							<div class="lh-bank">
+								<p class="lh-bank-txt"  data-lhi="txt_mt" data-lh-lang></p>
+								<p  data-lhi="badge_banner"></p>	
+							</div>
+						</div>
+					</form>
+				</div>
+		</div>
+	</div>
+
+</div>
+ 
+  </section><section id="" data-section-id="XpfVNbvrlg" data-section="video-9" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+ 
+ 
+<div class="lh-video">
+<div class="lh-container">
+  <div class="lh-row">
+    <div class="lh-col-md-6 ">
+      <div class="lh-content">
+        <div class="lh-bg"  data-lhi="bg_img"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/screenshot2022-08-25at3_a2m4_570x382_crop_center.png" alt="Background image" /></div>
+        <div class="lh-wrap-play">
+          
+          <a class="lh-popup-iframe" href="https://www.instagram.com/p/CgcPMk6Dp4p/" data-effect="mfp-zoom-in" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 24 36" >
+              <path d="M24 18L2.76017e-07 35.3205L1.79022e-06 0.67949L24 18Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="lh-col-md-1"></div>
+    <div class="lh-col-md-5">
+      <div class="lh-content-txt">
+        <p class="lh-txt-main"  data-lhi="txt_title_top" data-lh-lang>HOW TO STYLE THE KENZIE TOP</p>
+        <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang>1 Top, 12+ ways to wear</h3>
+        <div class="lh-txt-desc"  data-lhi="txt_desc" data-lh-lang data-lh-live-editor>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will</div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+  </section><section id="" data-section-id="ZGPWCI4lw5" data-section="testimonial-13" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+<div class="lh-testimonials-block" id="review" >
+	<div class="lh-testimonials-wrapper">
+		<div class="lh-container">
+            <div class="lh-row">
+                <div class="lh-col-md-12">
+                    <p class="lh-txt-main"  data-lhi="txt_title_top" data-lh-lang>REVIEWS</p>
+                    <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang></h3>
+                </div>
+            </div>
+            <div class="lh-testimonials-content lh-dots-yes lh-nav-no" data-hub-attr-state="class%3D%22lh-testimonials-content%20lh-dots-%257B%253A%257Bsection.settings.dot%257D%253A%257D%20lh-nav-%257B%253A%257Bsection.settings.nav%257D%253A%257D%22"  data-hub-attr-dot  data-hub-attr-nav >
+                <div class="lh-testimonials-list swiper-container">       
+                    <div class="js-testimonials-list swiper-wrapper">
+                         <div class="lh-testimonials-item swiper-slide">
+                            <div class="lh-row">
+                                <div class="lh-col-md-6">
+                                    <div class="lh-img"  data-lhi="group_testimonial[0]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/screenshot2022-08-25at3_0pr8.png?v=1661454751975" alt="Image" class="lh-testimonials__image" /></div>
+                                </div>
+                                <div class="lh-col-md-6">
+                                    <div class="lh-detail">
+                                        <div class="lh-rating">
+
+                                             
+
+                                                <include data-name="star_5" data-id="1">  
+ <svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>  </include> 
+                                        </div>
+                                        <div class="lh-text-content"  data-lhi="group_testimonial[0]content" data-lh-lang data-lh-live-editor data-lhis="group_testimonial-content">I love this set. It’s super soft and so flattering. I have a hard time finding cute triangle swim top that fit my chest but this one fit so nice and the color is perfect! -</div>
+                                        <p class="lh-name"  data-lhi="group_testimonial[0]your_name" data-lh-lang data-lhis="group_testimonial-your_name">Valerie D.</p>
+                                        <p class="lh-pos_name"  data-lhi="group_testimonial[0]pos_name" data-lh-lang data-lhis="group_testimonial-pos_name"></p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                         <div class="lh-testimonials-item swiper-slide">
+                            <div class="lh-row">
+                                <div class="lh-col-md-6">
+                                    <div class="lh-img"  data-lhi="group_testimonial[1]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/screenshot2022-08-25at3_Uf3M.png?v=1661454710814" alt="Image" class="lh-testimonials__image" /></div>
+                                </div>
+                                <div class="lh-col-md-6">
+                                    <div class="lh-detail">
+                                        <div class="lh-rating">
+
+                                             
+
+                                                <include data-name="star_5" data-id="2">  
+ <svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>  </include> 
+                                        </div>
+                                        <div class="lh-text-content"  data-lhi="group_testimonial[1]content" data-lh-lang data-lh-live-editor data-lhis="group_testimonial-content">I love love love this swim suit it’s sooooo flattering and fits perfect. Love the top is simple yet you can wear it so many ways.</div>
+                                        <p class="lh-name"  data-lhi="group_testimonial[1]your_name" data-lh-lang data-lhis="group_testimonial-your_name">Julia J.</p>
+                                        <p class="lh-pos_name"  data-lhi="group_testimonial[1]pos_name" data-lh-lang data-lhis="group_testimonial-pos_name"></p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                         <div class="lh-testimonials-item swiper-slide">
+                            <div class="lh-row">
+                                <div class="lh-col-md-6">
+                                    <div class="lh-img"  data-lhi="group_testimonial[2]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/screenshot2022-08-25at3_GjJA.png?v=1661454709903" alt="Image" class="lh-testimonials__image" /></div>
+                                </div>
+                                <div class="lh-col-md-6">
+                                    <div class="lh-detail">
+                                        <div class="lh-rating">
+
+                                             
+
+                                                <include data-name="star_5" data-id="3">  
+ <svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>  </include> 
+                                        </div>
+                                        <div class="lh-text-content"  data-lhi="group_testimonial[2]content" data-lh-lang data-lh-live-editor data-lhis="group_testimonial-content">Amazing bikini! So happy with the quality, fits true to size, got so many compliments on it</div>
+                                        <p class="lh-name"  data-lhi="group_testimonial[2]your_name" data-lh-lang data-lhis="group_testimonial-your_name">Georgia S.</p>
+                                        <p class="lh-pos_name"  data-lhi="group_testimonial[2]pos_name" data-lh-lang data-lhis="group_testimonial-pos_name"></p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                         <div class="lh-testimonials-item swiper-slide">
+                            <div class="lh-row">
+                                <div class="lh-col-md-6">
+                                    <div class="lh-img"  data-lhi="group_testimonial[3]img" data-lhis="group_testimonial-img"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/screenshot2022-08-25at3_5yeW.png?v=1661454709481" alt="Image" class="lh-testimonials__image" /></div>
+                                </div>
+                                <div class="lh-col-md-6">
+                                    <div class="lh-detail">
+                                        <div class="lh-rating">
+
+                                             
+
+                                                <include data-name="star_5" data-id="4">  
+ <svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>
+<svg enable-background="new 0 0 511.998 511.998" width="16" fill="#FFA800"; viewBox="0 0 511.998 511.998" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m414.168 500.62-158.169-83.155-158.169 83.155 30.207-176.121-128.037-124.735 176.86-25.689 79.139-162.697 79.139 162.697 176.86 25.689-128.037 124.734z"/></g></g></svg>  </include> 
+                                        </div>
+                                        <div class="lh-text-content"  data-lhi="group_testimonial[3]content" data-lh-lang data-lh-live-editor data-lhis="group_testimonial-content">Best bikini I’ve ever owned! Hugs your body perfectly and is so so soft! Everyone needs one!</div>
+                                        <p class="lh-name"  data-lhi="group_testimonial[3]your_name" data-lh-lang data-lhis="group_testimonial-your_name">Hannah M.</p>
+                                        <p class="lh-pos_name"  data-lhi="group_testimonial[3]pos_name" data-lh-lang data-lhis="group_testimonial-pos_name"></p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                         
+                   </div>
+                   <div class="swiper-pagination"></div>
+	            </div>
+                <div class="swiper-button-next"><i class="lni lni-chevron-right"></i></div>
+                <div class="swiper-button-prev"><i class="lni lni-chevron-left"></i></div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+   </section><section id="" data-section-id="iUgHJblAVk" data-section="best-solution-2" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+ 
+ 
+
+<div class="lh-solution" >
+    <div class="lh-container">
+        <div class="lh-row">
+            <div class="lh-col-md-6 lh-order1">
+                <div class="lh-content-txt">
+                    <p class="lh-txt-main"  data-lhi="txt_title_top" data-lh-lang>PAIR IT WITH</p>
+                    <h3 class="lh-title"  data-lhi="txt_title" data-lh-lang>THE KENZIE BOTTOMS</h3>
+                    <div class="lh-list">
+                        <ul>
+                             <li><p  data-lhi="list_solution[0]text_item" data-lh-lang data-lhis="list_solution-text_item">This bottom is designed to sit high above your hips to elongate your legs and enhance your waist. With an extra cheeky backside you’re going to love these bottoms.</p></li>
+                             <li><p  data-lhi="list_solution[1]text_item" data-lh-lang data-lhis="list_solution-text_item">Curve-hugging, double layered fabric with a seamless finish</p></li>
+                             <li><p  data-lhi="list_solution[2]text_item" data-lh-lang data-lhis="list_solution-text_item">Minimal coverage to show off your best assets</p></li>
+                             
+                        </ul>
+                    </div>
+                    <div class="lh-cus-w">
+                    <p class="lh-btn-main"  data-lhi="btn_link" data-lh-lang data-lhi-child="a"><a href="#" data-ga-action="tracking" data-ga-label="Button" data-lhlink>SHOP NOW <i class="lni lni-chevron-right-circle"></i></a></p>   
+                </div>
+                </div>
+                
+            </div>
+            <div class="lh-col-md-6 ">
+                <div class="lh-img"  data-lhi="img_ex"><img src="https://cdn.shopify.com/s/files/1/2112/6981/t/370/assets/r1-00193-014a_AhAi.jpg?v=1661445519281" /></div>
+            </div>
+        </div>
+    </div>
+</div>  </section><section id="" data-section-id="gWkbL8vMiq" data-section="incentives-4" data-dev="hongyen" data-lh-page-id="1119" data-lh-page-name="Mayi" data-layouthub="section">  
+  
+ 
+ 
+ 
+ 
+ 
+
+<div class="lh-incentives" >
+	<div class="lh-container " >
+        <div class="lh-list-item " >
+		<div class="lh-row">
+             <div class="lh-col-md-4 lh-cus">
+                <div class="lh-item">
+                     
+                        <div class="lh-icon"><i class="" data-hub-attr-state="class%3D%22%22"   data-hub-attr-list_item_0_font_icon="list_item[0]font_icon" data-lhis="list_item-font_icon" ></i></div>
+                    
+                     
+                    <h5 class="lh-text"  data-lhi="list_item[0]txt_item" data-lh-lang data-lhis="list_item-txt_item">FREE WORLDWIDE SHIPPING</h5>
+                </div>
+            </div>
+             <div class="lh-col-md-4 lh-cus">
+                <div class="lh-item">
+                     
+                        <div class="lh-icon"><i class="" data-hub-attr-state="class%3D%22%22"   data-hub-attr-list_item_1_font_icon="list_item[1]font_icon" data-lhis="list_item-font_icon" ></i></div>
+                    
+                     
+                    <h5 class="lh-text"  data-lhi="list_item[1]txt_item" data-lh-lang data-lhis="list_item-txt_item">NO DUTIES TO US & CANADA</h5>
+                </div>
+            </div>
+             <div class="lh-col-md-4 lh-cus">
+                <div class="lh-item">
+                     
+                        <div class="lh-icon"><i class="" data-hub-attr-state="class%3D%22%22"   data-hub-attr-list_item_2_font_icon="list_item[2]font_icon" data-lhis="list_item-font_icon" ></i></div>
+                    
+                     
+                    <h5 class="lh-text"  data-lhi="list_item[2]txt_item" data-lh-lang data-lhis="list_item-txt_item">FREE & EASY RETURNS</h5>
+                </div>
+            </div>
+                 
+        </div>
+		</div>
+	</div>
+</div>
+  </section>
+</div>

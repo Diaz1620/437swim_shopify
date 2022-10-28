@@ -1,0 +1,775 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "align": "center",
+            "color": "#ffffff",
+            "weight": "regular",
+            "size": "5.1rem",
+            "padding": "2px",
+            "margin": "0 auto",
+            "width": "85%",
+            "height": "50px",
+            "c_css": "margin-top: 150px;",
+            "m_align": "center",
+            "m_color": "#ffffff",
+            "m_weight": "",
+            "m_size": "3rem",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "75%",
+            "m_height": "",
+            "m_c_css": "margin-top: -30px;"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "bg": "#000000",
+            "border": "#000000",
+            "color": "#ffffff",
+            "b_width": "1px",
+            "size": "2rem",
+            "weight": "300",
+            "padding": "1 px",
+            "margin": "",
+            "width": "200px",
+            "height": "50px",
+            "c_css": "margin-top: 100px;\ntext-align:center;",
+            "m_bg": "#000000",
+            "m_border": "#ffffff",
+            "m_color": "#ffffff",
+            "m_b_width": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_padding": "",
+            "m_margin": "",
+            "m_width": "",
+            "m_height": "",
+            "m_c_css": "margin-top: 200px;"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/TYSM_13fb39c9-2c3f-4504-a088-26b9f7fdb580.png",
+        "image_2": "shopify:\/\/shop_images\/mobiletysm.png",
+        "url": "shopify:\/\/collections\/tysm",
+        "show_override": false,
+        "ov_bg_color": "#000000",
+        "ov_opacity": "0%",
+        "pv": "center",
+        "ph": "center",
+        "align": "center",
+        "padding": "4rem 0",
+        "margin": "",
+        "width": "",
+        "height": "",
+        "c_css": "",
+        "m_pv": "center",
+        "m_ph": "center",
+        "m_align": "center",
+        "m_padding": "",
+        "m_margin": "",
+        "m_width": "",
+        "m_height": "",
+        "m_c_css": ""
+      }
+    },
+    "165090501725afb5f3": {
+      "type": "marquee",
+      "disabled": true,
+      "settings": {
+        "marquee": "<p>BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST    | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST    | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | BUY THE TRIO TO SECURE AN EXCLUSIVE TOTE BAG FOR FREE, WHILE SUPPLIES LAST     | <\/p>",
+        "bg_color": "#c3d9b9",
+        "pause": true,
+        "direction": "left",
+        "behavior": "alternate",
+        "speed": 6,
+        "f_size": "15px",
+        "m_bg_color": "#c3d9b9",
+        "m_pause": true,
+        "m_direction": "left",
+        "m_behavior": "alternate",
+        "m_speed": 2,
+        "m_f_size": "10px"
+      }
+    },
+    "1651068483173a224f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_align": "center",
+        "collection": "homepage-carousel",
+        "products_to_show": 4,
+        "m_products_to_show": 4,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "16353541095b41180b": {
+      "type": "main-image-with-two-products",
+      "disabled": true,
+      "blocks": {
+        "c83b6b04-a6a2-441b-8feb-3ea6bc48e650": {
+          "type": "product",
+          "settings": {
+            "product": "the-micro-tank-matcha",
+            "image_ratio": "square"
+          }
+        },
+        "8793dfcf-2ee3-4f74-b1c8-7c2661151aba": {
+          "type": "product",
+          "settings": {
+            "product": "the-v-short-matcha",
+            "image_ratio": "square"
+          }
+        }
+      },
+      "block_order": [
+        "c83b6b04-a6a2-441b-8feb-3ea6bc48e650",
+        "8793dfcf-2ee3-4f74-b1c8-7c2661151aba"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_c6938fa5-499b-4807-acc3-03c605476649.jpg",
+        "image_position": "left",
+        "color": "#000000",
+        "title": "",
+        "img_url": "shopify:\/\/collections\/matcha-x-liv-mcilkenny",
+        "weight": "",
+        "size": "",
+        "m_weight": "",
+        "m_size": "",
+        "text": "",
+        "align": "center"
+      }
+    },
+    "16274821186e950e88": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "url": "",
+        "show_override": false,
+        "ov_bg_color": "",
+        "ov_opacity": "",
+        "pv": "center",
+        "ph": "center",
+        "align": "center",
+        "padding": "",
+        "margin": "",
+        "width": "",
+        "height": "",
+        "c_css": "",
+        "m_pv": "center",
+        "m_ph": "center",
+        "m_align": "center",
+        "m_padding": "",
+        "m_margin": "",
+        "m_width": "",
+        "m_height": "",
+        "m_c_css": ""
+      }
+    },
+    "16275737531b63eb15": {
+      "type": "partners",
+      "blocks": {
+        "16275737531b63eb15-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Coveteur.jpg",
+            "title": "",
+            "color": "#fcff03",
+            "size": "",
+            "weight": "",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "16275737531b63eb15-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Forbes_19369350-f771-4d58-85c8-1e4d70c17206.png",
+            "title": "",
+            "color": "#000000",
+            "size": "",
+            "weight": "",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "16275737531b63eb15-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vogue_934335f9-9abc-44fc-a049-70b28f980c01.png",
+            "title": "",
+            "color": "#13ff00",
+            "size": "",
+            "weight": "",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "63e78e0b-33b1-42a7-a05b-0dcec677ab2e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30Under30.png",
+            "title": "",
+            "color": "#e9999a",
+            "size": "4rem",
+            "weight": "normal",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "9765944f-7374-495e-8a0a-4c8447b2ef14": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NewYorkTimes_c35a9da9-7043-4f8e-b42e-97517b931e52.png",
+            "title": "",
+            "color": "#000000",
+            "size": "",
+            "weight": "",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        },
+        "62d7ece8-46d5-4843-9c49-510b504a042f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HypeBae_99b5d1d0-e7e3-4146-b3eb-3a1d2bad6d51.png",
+            "title": "",
+            "color": "#000000",
+            "size": "",
+            "weight": "",
+            "m_color": "#000000",
+            "m_size": "",
+            "m_weight": ""
+          }
+        }
+      },
+      "block_order": [
+        "16275737531b63eb15-1",
+        "16275737531b63eb15-0",
+        "16275737531b63eb15-2",
+        "63e78e0b-33b1-42a7-a05b-0dcec677ab2e",
+        "9765944f-7374-495e-8a0a-4c8447b2ef14",
+        "62d7ece8-46d5-4843-9c49-510b504a042f"
+      ],
+      "settings": {
+        "button_label": "VIEW PRESS",
+        "button_link": "shopify:\/\/blogs\/press",
+        "bg": "",
+        "border": "",
+        "color": "",
+        "size": "",
+        "weight": "",
+        "width": "",
+        "m_bg": "",
+        "m_border": "",
+        "m_color": "",
+        "m_size": "",
+        "m_weight": "",
+        "m_width": ""
+      }
+    },
+    "1638463987ee4ed543": {
+      "type": "spacing",
+      "settings": {
+        "background-color": "#ffffff",
+        "spacing-value-desktop": 5,
+        "spacing-value-mobile": 5
+      }
+    },
+    "16457262806cf19c77": {
+      "type": "collection-our",
+      "disabled": true,
+      "blocks": {
+        "1645726280d953f8a2-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/comingsoon1_copy_2.png",
+            "title": "<center>SUMMER 1<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p><a href=\"https:\/\/www.klaviyo.com\/forms\/Tr2UjX\" title=\"Sign up for early access\">Sign Up for early access<\/a><\/p>",
+            "button_link": "shopify:\/\/pages\/newsletter-signup"
+          }
+        },
+        "1645726280d953f8a2-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/comingsoon1_a6cd4921-7edd-4137-a9bd-233b9397fab9.png",
+            "title": "<center>VIV x 437<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p><a href=\"https:\/\/www.klaviyo.com\/forms\/Tr2UjX\" title=\"Sign up for early access\">Sign Up for early access<\/a><\/p>",
+            "button_link": "shopify:\/\/pages\/newsletter-signup"
+          }
+        },
+        "1645726280d953f8a2-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/comingsoon1.png",
+            "title": "<center>BUTTERCREAM<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p><a href=\"https:\/\/www.klaviyo.com\/forms\/Tr2UjX\" title=\"Sign up for early access\">Sign Up for early access<\/a><\/p>",
+            "button_link": "shopify:\/\/pages\/newsletter-signup"
+          }
+        }
+      },
+      "block_order": [
+        "1645726280d953f8a2-0",
+        "1645726280d953f8a2-1",
+        "1645726280d953f8a2-2"
+      ],
+      "settings": {
+        "title": "",
+        "color": "",
+        "weight": "",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "1643133495d72e9109": {
+      "type": "spacing",
+      "disabled": true,
+      "settings": {
+        "background-color": "#ffffff",
+        "spacing-value-desktop": 5,
+        "spacing-value-mobile": 5
+      }
+    },
+    "164185077183b17fe9": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_align": "center",
+        "collection": "homepage-carousel",
+        "products_to_show": 3,
+        "m_products_to_show": 2,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "16509879922419e4d4": {
+      "type": "collection-two-column",
+      "blocks": {
+        "16509879920cba80b4-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_4d6f0ea3-37b1-437b-9127-b201ab84ef9a.png",
+            "button_label": "SHOP NEW SWIM",
+            "button_link": "shopify:\/\/collections\/new-arrivals",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "width": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_width": ""
+          }
+        },
+        "16509879920cba80b4-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17_a1a541f4-c4bb-4495-8b34-be5dc3e0e3dd.png",
+            "button_label": "SHOP NEW ACTIVE",
+            "button_link": "shopify:\/\/collections\/active",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "width": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "16509879920cba80b4-0",
+        "16509879920cba80b4-1"
+      ],
+      "settings": {
+        "title": "",
+        "color": "",
+        "weight": "",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "165910435332709a8f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "NEW IN",
+        "title_align": "center",
+        "collection": "hp-carousel",
+        "products_to_show": 7,
+        "m_products_to_show": 7,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "166437408169735025": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "COMING SOON",
+        "title_align": "center",
+        "collection": "coming-soon-1",
+        "products_to_show": 4,
+        "m_products_to_show": 4,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "1627664186c859a362": {
+      "type": "collection-see",
+      "blocks": {
+        "1627664186c859a362-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KYLIEJENNER.jpg",
+            "title": "KYLIE JENNER",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/kyliejenner-faves"
+          }
+        },
+        "1627664186c859a362-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ALEXANDRACOOPERV2_800x_30439f52-6d9f-4b42-94f8-728698f0b6c7.png",
+            "title": "ALEX COOPER",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/alexandracooper-faves"
+          }
+        },
+        "1627664186c859a362-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ADDISONRAE.png",
+            "title": "ADDISON RAE",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/addisoneasterlings-favs"
+          }
+        },
+        "1627664186c859a362-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GABUNIONV2_800x_472682c8-fed3-4151-9bcc-8b10e379a2c9.png",
+            "title": "GABRIELLE UNION",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/gabunion-faves"
+          }
+        },
+        "1627664186c859a362-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VANESSAHUDGENS.jpg",
+            "title": "VANESSA HUDGENS",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/vanessahudgens-faves"
+          }
+        },
+        "1627664186c859a362-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/emmachamberlain_800x_35a7c0df-91a3-408a-82a8-19b7643c687c.png",
+            "title": "EMMA CHAMBERLAIN",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/emmachamberlain"
+          }
+        }
+      },
+      "block_order": [
+        "1627664186c859a362-0",
+        "1627664186c859a362-1",
+        "1627664186c859a362-2",
+        "1627664186c859a362-3",
+        "1627664186c859a362-4",
+        "1627664186c859a362-5"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "1627668372e759df4d": {
+      "type": "collection-our",
+      "blocks": {
+        "1627668372e759df4d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black_new.png",
+            "title": "<center>LUXE FABRICS<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>If you haven't felt our 437 fabric yet, you're in for a treat. We pride ourselves on creating luxe swimwear and apparel that uses the highest quality fabrics designed to flatter the body.<\/p>",
+            "button_link": "shopify:\/\/collections\/all-swimwear"
+          }
+        },
+        "1627668372e759df4d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LUXE_FABRICS.png",
+            "title": "<center>FLATTERING CUTS<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>We design every 437 piece with your curves in mind. Our pieces are cut to have the most figure flattering fits on the market - elongating legs, accentuating curves and hugging you in all the right places.<\/p>",
+            "button_link": "shopify:\/\/collections\/all-swimwear"
+          }
+        },
+        "1627668372e759df4d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Versatility.gif",
+            "title": "<center>VERSATILITY<\/center>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "text": "<p>With 437, your options are endless. Our seamlessly crafted pieces are designed to allow you to create unlimited styles and looks without compromising quality or fit.<\/p>",
+            "button_link": "shopify:\/\/collections\/all-swimwear"
+          }
+        }
+      },
+      "block_order": [
+        "1627668372e759df4d-0",
+        "1627668372e759df4d-1",
+        "1627668372e759df4d-2"
+      ],
+      "settings": {
+        "title": "",
+        "color": "",
+        "weight": "normal",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "16343123586a006927": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div style=\"max-width: 1340px;margin:0 auto;text-align:center;padding: 30px 50px;width: 80%;\">\n    \n  \n\n <p style=\"margin-top: 20px;font-size: 14px;color: #000;letter-spacing: 0.5px;line-height:1.5;\">437 is a luxury swimwear and apparel brand founded by Toronto-native best friends Hyla Nayeri and Adrien Bettio. Starting with the mission of creating the perfect bikini, 437 has become synonymous with curve-hugging designs and buttery soft fabrics that are made to cinch the waist and elongate the legs. Now, we’ve brought our meticulous cuts and flattering silhouettes into our apparel designs, to ensure every woman can feel her most confident and sexy self, regardless of the occasion. We've now seen some of your favorite celebs, influencers and tik tok stars wearing 437 including: Kylie Jenner, Halsey, Meg Thee Stallion, Addison Rae, Charli D'Amelio and many more...<\/p>\n\n  <div><a href=\"https:\/\/437swimwear.com\/pages\/our-story-new\"><span class=\"css-n4kwlm\">ABOUT 437<\/span><\/a><\/div>\n<\/div>"
+      }
+    },
+    "1627669981dce8454c": {
+      "type": "rich-text",
+      "blocks": {
+        "1627669981dce8454c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>We’re 437 - a luxe swim and activewear brand driven by a desire to create products that don’t compromise on style, quality, or fit. Founded in 2017 by best friends Hyla Nayeri and Adrien Bettio, we’ve been expanding our product offering which started with swimwear but now includes activewear, beachwear, and accessories. In the last 4 years since launch we’ve built a strong, loyal community that has helped us grow 5x year over year. 437’s iconic styles have now been worn by everyone you follow on Instagram - including Kylie Jenner, Megan Thee Stallion, Jennifer Lopez, and Addison Rae, and many more...<\/p>",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": ""
+          }
+        },
+        "1627669981dce8454c-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "ABOUT 437",
+            "button_link": "shopify:\/\/pages\/our-story",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "width": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "1627669981dce8454c-1",
+        "1627669981dce8454c-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "16353499662751b33c": {
+      "type": "main-instagram",
+      "settings": {
+        "sub_title": "",
+        "title": "",
+        "url": "shopify:\/\/pages\/instashop",
+        "color": "",
+        "weight": "",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "1662119822262c1f7b": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "475838d3-9c42-4639-8cc1-501665b20255": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "maxNumberOfCharacters": 100,
+            "quoteMarkIcon": "style-1",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "starsColor": "",
+            "quotesIconColor": "#eaeaea",
+            "arrows_iconColor": "#000000",
+            "arrows_hideOnMobile": true,
+            "pagination_active": true,
+            "pagination_selectedDotColor": "#000000",
+            "pagination_dotColor": "#000000",
+            "autoplay_active": false,
+            "autoplay_duration": 2,
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "475838d3-9c42-4639-8cc1-501665b20255"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "165090501725afb5f3",
+    "1651068483173a224f",
+    "16353541095b41180b",
+    "16274821186e950e88",
+    "16275737531b63eb15",
+    "1638463987ee4ed543",
+    "16457262806cf19c77",
+    "1643133495d72e9109",
+    "164185077183b17fe9",
+    "16509879922419e4d4",
+    "165910435332709a8f",
+    "166437408169735025",
+    "1627664186c859a362",
+    "1627668372e759df4d",
+    "16343123586a006927",
+    "1627669981dce8454c",
+    "16353499662751b33c",
+    "1662119822262c1f7b"
+  ]
+}
