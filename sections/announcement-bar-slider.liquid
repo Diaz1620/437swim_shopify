@@ -1,0 +1,129 @@
+{%- if  section.blocks.size > 0 and section.settings.show_announcement_bar -%}
+<div class="zwk-announcement-bar swiper-container">
+  <div class="zwk-messages swiper-wrapper">
+    {%- for block in section.blocks -%}
+    <div class="zwk-message swiper-slide">{{block.settings.message}}</div>
+    {%- endfor -%}
+  </div>
+  <div class="zwk-swiper-button swiper-button-prev"></div>
+  <div class="zwk-swiper-button swiper-button-next"></div>
+</div>
+<script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css" />
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    {%- if section.settings.autoplay %}
+    autoplay: {delay: {{section.settings.delay}} },
+    {%- endif -%}
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<style>
+  .zwk-announcement-bar{
+    background:{{section.settings.colorBackground}};
+    position: relative;
+    overflow: hidden;
+  }
+  div#shopify-section-Announcement-slider {
+    text-align: center;
+  }
+  .zwk-announcement-bar .zwk-message{
+    text-align:center;
+    color:{{section.settings.colorText}};
+    font-size:{{section.settings.font_size}}px;
+    text-transform:{{section.settings.mobile_thumbnails1}};
+    
+  }
+  .zwk-announcement-bar .swiper-button-next:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-prev:after,
+  .zwk-announcement-bar .swiper-button-prev:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-next:after{
+    font-size: 15px;
+    color:{{section.settings.colorText}};
+  }
+  {%- if  section.blocks.size < 2 %}
+  .zwk-announcement-bar .zwk-swiper-button{display:block!important;}
+  {%- endif -%}
+  
+</style>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Announcement slider Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement_bar",
+        "label": "Show"
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Autoplay"
+      },
+      {
+        "type": "text",
+        "id": "delay",
+        "label": "Delay between transitions (in ms)",
+        "default": "5000"
+      },
+      {
+        "type": "color",
+        "id": "colorBackground",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "colorText",
+        "label": "Text color",
+        "default": "#000"
+      },
+   {
+      "type": "range",
+      "id": "font_size",
+      "min": 14,
+      "max": 50,
+      "step": 4,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+ {
+      "type": "select",
+      "id": "mobile_thumbnails1",
+     "label": "Text transform",
+      "options": [
+        {
+          "value": "uppercase",
+          "label": "Upper case"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lower case"
+        },
+       {
+          "value": "Capitalize",
+          "label": "Capitalize"
+        }
+      ]
+    }
+],
+"blocks": [
+      {
+        "type": "header",
+        "name": "Message",
+        "settings": [
+          {
+              "id": "message",
+              "type": "text",
+             "label": "Enter your text"
+            }
+        ]
+      }
+]
+  }
+{% endschema %}
