@@ -43,10 +43,14 @@
     font-size: 15px;
     color:{{section.settings.colorText}};
   }
-  {%- if  section.blocks.size < 2 %}
+  {%- if  section.blocks.size > 1 %}
   .zwk-announcement-bar .zwk-swiper-button{display:block!important;}
   {%- endif -%}
-  
+  .swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 12%;
+    margin-top: 0;
+  }
 </style>
 {%- endif -%}
 
