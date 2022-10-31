@@ -21,18 +21,17 @@
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       {%- assign total_active_values = 0 -%}
       <collection-filters-form class="facets small-hide">
-        <form id="CollectionFiltersForm" class="facets__form">
+        <form id="CollectionFiltersForm" class="facets__form" style="display: flex; justify-content: space-between;">
           {%- if section.settings.enable_sorting -%}
             <div class="collection-filters__item sorting">
               <details class="disclosure-has-popup facets__disclosure js-filter" data-index="tag-0">              
                 <summary class="facets__summary">
-                  <div>
-                    <label class="collection-filters__label" for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
+                  {%- comment -%} removed class="collection-filters__label" from label below {%- endcomment -%}
+                    <label for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
                     </path></svg>
 
-                  </div>
                 </summary>
                 <div class="facets__display">
                   <div class="select">
@@ -52,6 +51,9 @@
               </noscript>
             </div>
           {%- endif -%}
+
+          {%- comment -%} added div to seperate "Sort By" and rest of the filter {%- endcomment -%}
+          <div style="display: flex; width: 75rem; justify-content: space-between">
           {% if section.settings.enable_filtering %}
             {%- if section.blocks.size > 0 -%}
 
@@ -315,6 +317,7 @@
           {% if collection.current_vendor or collection.current_type %}
             <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
           {% endif %}
+          </div>
         </form>
       </collection-filters-form>
       
