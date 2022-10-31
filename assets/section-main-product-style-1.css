@@ -992,10 +992,10 @@
     background: rgb(0 0 0 / 52%);
 }
 .product-media-modal>div{
-   max-width: 800px;
+   /* max-width: 800px; */
     margin: 0 auto;
-    height: auto;
-    max-height: 60%;
+    height: 100%;
+    /* max-height: 60%; */
     background: white;
     position: absolute;
     left: 50%;
@@ -1004,10 +1004,10 @@
     padding: 15px 1px 15px 15px;
     outline: 0;
     overflow: hidden;
-  width:94%;
+  width:100%;
 }
 .product-media-modal__content{
-  height: calc(60vh - 30px);
+  height: 100%;
   overflow: auto;
 }
 .product-media-modal__content>*{
