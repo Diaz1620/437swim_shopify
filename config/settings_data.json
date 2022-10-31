@@ -146,8 +146,9 @@
           "0552fd8c-cab0-4eea-bbd5-15ccfdc143fd"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Artboard-1_copy_2_b82e4ecc-5229-4367-8a83-246b81923726.jpg",
-          "logo_width": 220,
+          "content_color": "",
+          "logo": "shopify:\/\/shop_images\/Logo_Black-01.png",
+          "logo_width": 230,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
@@ -791,6 +792,43 @@
           "font-family": "inherit",
           "product-page-alignment": "auto",
           "cart-page-alignment": "auto"
+        }
+      },
+      "announcement-bar-slider": {
+        "type": "announcement-bar-slider",
+        "blocks": {
+          "c7f23fe4-52cb-499a-84b0-1484d82b6915": {
+            "type": "header",
+            "settings": {
+              "message": "Test annoucement"
+            }
+          },
+          "b12fbca5-2162-4fac-8f6c-16eb34f3be62": {
+            "type": "header",
+            "settings": {
+              "message": "Another one"
+            }
+          },
+          "cb500c34-ab1a-476e-b189-55f8489fd663": {
+            "type": "header",
+            "settings": {
+              "message": "Last one"
+            }
+          }
+        },
+        "block_order": [
+          "c7f23fe4-52cb-499a-84b0-1484d82b6915",
+          "b12fbca5-2162-4fac-8f6c-16eb34f3be62",
+          "cb500c34-ab1a-476e-b189-55f8489fd663"
+        ],
+        "settings": {
+          "show_announcement_bar": true,
+          "autoplay": true,
+          "delay": "5000",
+          "colorBackground": "#000000",
+          "colorText": "#ffffff",
+          "font_size": 14,
+          "mobile_thumbnails1": "lowercase"
         }
       }
     },
