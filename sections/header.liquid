@@ -412,7 +412,7 @@
     {%- endif -%}
 
     <div class="header__icons">
-      {% assign menu = linklists.guide %}
+      {% assign menu = section.settings.guide_menu %}
       <nav class="">
         <ul class="list-menu list-menu--inline" role="list">
           <li>
@@ -824,6 +824,12 @@
       "id": "search_hide_tags",
       "label": "Tags for hide on Search",
       "info": "Please contain tags that you want to hide from search result. Use '|' to seperate tags. EX: BOTTOMS|C_COVERAGES_CHEEKY|hide"
+    },
+    {
+      "type": "link_list",
+      "id": "guide_menu",
+      "default": "Guide",
+      "label": "Guide Menu"
     },
     {
       "type": "link_list",
