@@ -420,7 +420,9 @@
               <details>
                   <summary class="header__menu-item list-menu__item link focus-inset" >
                     <span >{{ menu.title }}</span>
-                    {% render 'icon-caret' %}
+                    {% if menu %}
+                      {% render 'icon-caret' %}
+                    {% endif %}
                   </summary>
                   <div class="header__submenu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                     <ul class="list-menu">
@@ -828,7 +830,6 @@
     {
       "type": "link_list",
       "id": "guide_menu",
-      "default": "Guide",
       "label": "Guide Menu"
     },
     {
