@@ -46,22 +46,22 @@
   {%- if  section.blocks.size > 1 %}
   .zwk-announcement-bar{display:block!important;}
   {%- endif -%}
-
-    {% if section.settings.show_arrows and section.blocks.size > 1 %}
-        .zwk-swiper-button{display:block!important;}
-        .swiper-button-prev, .swiper-button-next {
-            position: absolute;
-            top: 12%;
-            margin-top: 0;
-        }
-        .swiper-button-prev{
-            left: 3rem;
-        }
-    {%- else -%}
-        .zwk-swiper-button {
-            display: none;
-        }
-    {% endif %}
+  {% if section.settings.show_arrows and section.blocks.size > 1 %}
+      .zwk-swiper-button{display:block!important;}
+      .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: 12%;
+        margin-top: 0;
+      }
+    
+      .swiper-button-prev{
+        left: 3rem;
+      }
+  {%- else -%}
+      .zwk-swiper-button {
+          display: none;
+      }
+  {% endif %}
 </style>
 {%- endif -%}
 
