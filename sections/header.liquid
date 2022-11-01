@@ -420,7 +420,7 @@
               <details>
                   <summary class="header__menu-item list-menu__item link focus-inset" >
                     <span >{{ menu.title }}</span>
-                    {% if menu %}
+                    {% if section.settings.guide_menu != blank %}
                       {% render 'icon-caret' %}
                     {% endif %}
                   </summary>
@@ -829,14 +829,18 @@
     },
     {
       "type": "link_list",
-      "id": "guide_menu",
-      "label": "Guide Menu"
-    },
-    {
-      "type": "link_list",
       "id": "search_menu",
       "label": "Menu Search"
-    }
+    },
+      {
+        "type": "header",
+        "content": "Guide Menu"
+      },
+      {
+        "type": "link_list",
+        "id": "guide_menu",
+        "label": "Guide Menu"
+      }
   ],
   "blocks": [
     {
