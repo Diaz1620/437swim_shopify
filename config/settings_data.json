@@ -824,6 +824,7 @@
         "settings": {
           "show_announcement_bar": true,
           "autoplay": true,
+          "show_arrows": true,
           "delay": "5000",
           "colorBackground": "#000000",
           "colorText": "#ffffff",
