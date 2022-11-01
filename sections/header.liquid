@@ -412,6 +412,46 @@
     {%- endif -%}
 
     <div class="header__icons">
+      {% assign menu = linklists.guide %}
+      <nav class="">
+        <ul class="list-menu list-menu--inline" role="list">
+          <li>
+            <details-disclosure>
+              <details>
+                  <summary class="header__menu-item list-menu__item link focus-inset" >
+                    <span >{{ menu.title }}</span>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <div class="header__submenu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                    <ul class="list-menu">
+                      {% for link in menu.links %}
+                        <li>
+                          {%- if link.links == blank -%}
+                            <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if link.current %} list-menu__item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                              {{ link.title }}
+                            </a>
+                          {%- endif -%}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                    <ul class="list-menu">
+                      {% for link in menu.links %}
+                        {%- if link.links != blank -%}
+                          {%- for childlink in link.links -%}
+                            <li>
+                                <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                  {{ childlink.title }}
+                                </a>
+                          {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+              </details>
+            </details-disclosure>
+          </li>
+        </ul>
+      </nav>
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
