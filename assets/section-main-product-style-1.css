@@ -537,6 +537,9 @@
   .product-media-modal__content > *:not(.active),
   .product__media-list .deferred-media {
     display: block;
+  }
+
+  .product-media-modal__content > * + * {
     margin-top: 2rem;
   }
   
@@ -569,7 +572,7 @@
   
   .product-media-modal__content > * {
     height: auto;
-    margin: auto;
+    /* margin: auto; */
   }
   
   .product-media-modal__content .media {
