@@ -540,7 +540,7 @@
   }
 
   .product-media-modal__content > * + * {
-    margin-top: 2rem;
+    margin-top: .5rem;
   }
   
   @media screen and (min-width: 750px) {
