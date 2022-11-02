@@ -536,7 +536,8 @@
   
   .product-media-modal__content > *:not(.active),
   .product__media-list .deferred-media {
-    display: none;
+    display: block;
+    margin-top: 2rem;
   }
   
   @media screen and (min-width: 750px) {
