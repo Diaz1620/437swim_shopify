@@ -1717,13 +1717,13 @@ input[type='checkbox'] {
     
     
     #shopify-section-header {
-      top: 23px !important;
+      /* top: 23px !important; */
     }
     
   }
   @media(max-width:367px){
     #shopify-section-header {
-      top: 34px !important;
+      /* top: 34px !important; */
     }
   }  
   
