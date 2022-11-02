@@ -2399,11 +2399,11 @@ a {
 }
  @media(min-width:1200px){
     main#MainContent{
-      max-width:1400px;
+      /* max-width:1400px; */
       margin:auto;
     }
     sticky-header>header.header{
-      max-width:1440px;
+      /* max-width:1440px; */
     }
    body.collection main#MainContent{
       max-width:1455px;
