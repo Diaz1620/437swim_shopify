@@ -1778,6 +1778,26 @@ input[type='checkbox'] {
   background-color: var(--color-background);
 }
 
+/* .transparent-width {
+  width: 102%;
+}
+
+@media screen and (min-width: 2260px) {
+  .transparent-width {
+    width: 10`%;
+  }
+}
+@media screen and (min-width: 560px) {
+  .transparent-width {
+    width: 103%;
+  }
+}
+@media screen and (min-width: 388px) {
+  .transparent-width {
+    width: 104%;
+  }
+} */
+
 /* .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid var(--color-foreground-20);
 } */
