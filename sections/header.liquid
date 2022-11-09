@@ -86,7 +86,7 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} id="header-container" class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %} transparent-width">
   <header id="site-header" class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} site-header-transparent">
     {%- if section.settings.menu != blank -%}
       <header-drawer>
@@ -664,8 +664,9 @@
      position: absolute;
      border: none;
      width: 100%;
+     left: 0;
+     right:0;
      {% comment %}
-     left: 50%;
      transform: translateX(-50%);
      {% endcomment %}
    }
@@ -682,15 +683,18 @@
     document.getElementById('MainContent').style.setProperty('--header-height', '-'+ headerHeight + 'px');
   });
   window.onscroll = function() {
+    var wrapper = document.getElementById('header-container');
     var header = document.getElementById('site-header');
     var main = document.getElementById('MainContent');
     var height = document.getElementById('site-header').offsetHeight;
     if ( window.pageYOffset > height ) {
       header.classList.remove('site-header-transparent');
       main.classList.add('site-header-transition');
+      {%- comment -%} wrapper.classList.remove('transparent-width'); {%- endcomment -%}
     } else {
       header.classList.add('site-header-transparent');
       main.classList.remove('site-header-transition');
+      {%- comment -%} wrapper.classList.add('transparent-width'); {%- endcomment -%}
     }
   }
   document.getElementById("header-menu").addEventListener('click',function () {
@@ -717,6 +721,7 @@
       } else {
         header.classList.add('site-header-transparent');
         main.classList.remove('site-header-transition');
+
       }
     }
   });
