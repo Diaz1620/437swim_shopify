@@ -895,7 +895,7 @@ input.mobile-facets__checkbox {
 }
 .bc-collection-page-fillters {
   position: sticky;
-  top: 16vh;
+  top: 4vh;
   height: 6vh;
   z-index: 2;
   background-color: white;
