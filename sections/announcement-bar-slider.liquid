@@ -27,6 +27,7 @@
     background:{{section.settings.colorBackground}};
     position: relative;
     overflow: hidden;
+    height: 3vh;
   }
   div#shopify-section-Announcement-slider {
     text-align: center;
@@ -36,11 +37,13 @@
     color:{{section.settings.colorText}};
     font-size:{{section.settings.font_size}}px;
     text-transform:{{section.settings.mobile_thumbnails1}};
-    
+    top: 10%;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
   }
   .zwk-announcement-bar .swiper-button-next:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-prev:after,
   .zwk-announcement-bar .swiper-button-prev:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-next:after{
-    font-size: 15px;
+    font-size: 10px;
     color:{{section.settings.colorText}};
   }
   {%- if  section.blocks.size > 1 %}
@@ -50,7 +53,7 @@
       .zwk-swiper-button{display:block!important;}
       .swiper-button-prev, .swiper-button-next {
         position: absolute;
-        top: 12%;
+        top: 15%;
         margin-top: 0;
       }
     
