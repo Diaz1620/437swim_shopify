@@ -37,9 +37,12 @@
     color:{{section.settings.colorText}};
     font-size:{{section.settings.font_size}}px;
     text-transform:{{section.settings.mobile_thumbnails1}};
-    top: 15%;
+    {%- comment -%} top: 15%; {%- endcomment -%}
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .zwk-announcement-bar .swiper-button-next:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-prev:after,
   .zwk-announcement-bar .swiper-button-prev:after, .zwk-announcement-bar .swiper-container-rtl .swiper-button-next:after{
