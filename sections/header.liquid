@@ -660,21 +660,24 @@
     color: {{ section.settings.content_color }};
    }
    .site-header-transparent {
+     {% comment %}
      background: transparent;
      position: absolute;
      border: none;
      width: 100%;
      left: 0;
      right:0;
-     {% comment %}
      transform: translateX(-50%);
      {% endcomment %}
    }
-   .site-header-transparent:hover{
+   #header-container:not(.scrolled):hover{
     background: white;
    }
    .site-header-transition {
       margin-top: var(--header-height);
+   }
+   #header-container:not(.scrolled){
+    background: transparent;
    }
 {% endstyle %}
 <script>
@@ -688,13 +691,13 @@
     var main = document.getElementById('MainContent');
     var height = document.getElementById('site-header').offsetHeight;
     if ( window.pageYOffset > height ) {
-      header.classList.remove('site-header-transparent');
+      {%- comment -%} header.classList.remove('site-header-transparent'); {%- endcomment -%}
       main.classList.add('site-header-transition');
-      {%- comment -%} wrapper.classList.remove('transparent-width'); {%- endcomment -%}
+      wrapper.classList.add('scrolled');
     } else {
-      header.classList.add('site-header-transparent');
+      {%- comment -%} header.classList.add('site-header-transparent'); {%- endcomment -%}
       main.classList.remove('site-header-transition');
-      {%- comment -%} wrapper.classList.add('transparent-width'); {%- endcomment -%}
+      wrapper.classList.remove('scrolled');
     }
   }
   document.getElementById("header-menu").addEventListener('click',function () {
