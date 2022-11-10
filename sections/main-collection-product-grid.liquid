@@ -21,7 +21,7 @@
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       {%- assign total_active_values = 0 -%}
       <collection-filters-form class="facets small-hide">
-        <form id="CollectionFiltersForm" class="facets__form" style="position: relative;display: flex;justify-content: space-between;align-items: flex-start;z-index: 3;height: 6vh;">
+        <form id="CollectionFiltersForm" class="facets__form" style="position: relative;display: flex;justify-content: space-between;align-items: flex-start;z-index: 3;height: 6vh; padding: 0 1rem;">
           {%- comment -%} added div to seperate "Sort By" and rest of the filter {%- endcomment -%}
           <div style="display: flex; justify-content: space-between">
           {% if section.settings.enable_filtering %}
