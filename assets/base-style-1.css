@@ -1774,9 +1774,9 @@ input[type='checkbox'] {
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: absolute;
+  /* position: absolute; */
   background-color: var(--color-background);
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* .transparent-width {
