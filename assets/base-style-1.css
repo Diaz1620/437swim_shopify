@@ -688,7 +688,7 @@ summary::-webkit-details-marker {
 }
 
 .disclosure-has-popup {
-  position: relative;
+  /* position: relative; */
 }
 
 .disclosure-has-popup[open] > summary::before {
