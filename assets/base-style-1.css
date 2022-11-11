@@ -1318,9 +1318,10 @@ deferred-media {
 
 .text-area,
 .select {
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 100%;
+  justify-content: end;
 }
 
 /* Select */
