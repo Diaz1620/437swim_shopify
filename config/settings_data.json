@@ -154,7 +154,8 @@
           "show_line_separator": true,
           "enable_sticky_header": true,
           "search_hide_tags": "hidesearch",
-          "search_menu": "shop"
+          "search_menu": "shop",
+          "guide_menu": ""
         }
       },
       "footer": {
@@ -800,19 +801,22 @@
           "c7f23fe4-52cb-499a-84b0-1484d82b6915": {
             "type": "header",
             "settings": {
-              "message": "Test annoucement"
+              "message": "Test annoucement",
+              "link": "shopify:\/\/pages\/437-active"
             }
           },
           "b12fbca5-2162-4fac-8f6c-16eb34f3be62": {
             "type": "header",
             "settings": {
-              "message": "Another one"
+              "message": "Another one",
+              "link": ""
             }
           },
           "cb500c34-ab1a-476e-b189-55f8489fd663": {
             "type": "header",
             "settings": {
-              "message": "Last one"
+              "message": "Last one",
+              "link": ""
             }
           }
         },
@@ -828,8 +832,8 @@
           "delay": "5000",
           "colorBackground": "#000000",
           "colorText": "#ffffff",
-          "font_size": 14,
-          "mobile_thumbnails1": "lowercase"
+          "font_size": 11,
+          "mobile_thumbnails1": "uppercase"
         }
       }
     },
