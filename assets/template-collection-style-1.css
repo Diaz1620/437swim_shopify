@@ -973,6 +973,7 @@ font-weight: 400;
 
 #CollectionFiltersForm details>summary svg{
 height:8px;
+transition: .1s;
 }
 #CollectionFiltersForm details:not([open])>summary svg{
 transform: rotate(-90deg);
