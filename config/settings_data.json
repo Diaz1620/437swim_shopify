@@ -146,7 +146,7 @@
           "0552fd8c-cab0-4eea-bbd5-15ccfdc143fd"
         ],
         "settings": {
-          "content_color": "",
+          "content_color": "#000000",
           "logo": "shopify:\/\/shop_images\/Logo_Black-01_1.png",
           "logo_width": 230,
           "logo_position": "middle-left",
@@ -155,7 +155,7 @@
           "enable_sticky_header": true,
           "search_hide_tags": "hidesearch",
           "search_menu": "shop",
-          "guide_menu": ""
+          "guide_menu": "guide"
         }
       },
       "footer": {
@@ -801,22 +801,22 @@
           "c7f23fe4-52cb-499a-84b0-1484d82b6915": {
             "type": "header",
             "settings": {
-              "message": "Test annoucement",
-              "link": "shopify:\/\/pages\/437-active"
+              "message": "SHOP OUR HOLIDAY GIFT GUIDE",
+              "link": "shopify:\/\/collections\/gift-guide-2022"
             }
           },
           "b12fbca5-2162-4fac-8f6c-16eb34f3be62": {
             "type": "header",
             "settings": {
-              "message": "Another one",
-              "link": ""
+              "message": "FREE SHIPPING OVER $100",
+              "link": "shopify:\/\/collections\/all-swimwear"
             }
           },
           "cb500c34-ab1a-476e-b189-55f8489fd663": {
             "type": "header",
             "settings": {
-              "message": "Last one",
-              "link": ""
+              "message": "SHOP ACTIVE",
+              "link": "shopify:\/\/collections\/active"
             }
           }
         },

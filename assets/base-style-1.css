@@ -2431,12 +2431,40 @@ a {
       max-width:1455px;
       margin:auto;
       width:100%;
+
+     max-width: none;
     }
    body.product main#MainContent{
       max-width:1430px;
       margin:auto;
       width:100%;
+
+     max-width: none;
     }
   
   }
+
+/* Edits to make page full width */
+.bc-collection-page-main{
+  max-width: none !important;
+}
+
+/* Edits to fix header megamenu items bugs */
+.header__inline-menu {
+  height: 100%;
+}
+.list-menu.list-menu--inline {
+  height: 100%;
+}
+.header__inline-menu details{
+  height: 100%;
+}
+
+
+
+
+
+
+
+
   
