@@ -450,6 +450,7 @@
         {%- for media in product.media -%}
           {%- if media.media_type == 'image' -%}
             <img
+              id="{{ media.id }}"
               srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | img_url: '550x' }} 550w,{%- endif -%}
                       {%- if media.preview_image.width >= 1100 -%}{{ media.preview_image | img_url: '1100x' }} 1100w,{%- endif -%}
                       {%- if media.preview_image.width >= 1680 -%}{{ media.preview_image | img_url: '1680x' }} 1680w,{%- endif -%}
@@ -480,6 +481,7 @@
                   {%- endif -%}
                 </span>
                 <img
+                  id="{{ media.id }}"
                   srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
                           {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
                           {% if media.preview_image.width >= 550 %}{{ media.preview_image | img_url: '550x' }} 550w,{% endif %}
@@ -528,6 +530,32 @@
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}
+        <div id="thumbnails" class="product-fullscreen-thumbnails">
+          <ul class="fullscreen-thumbnails">
+            {% for media in product.media %}
+            <li class="js-fullscreen-thumbnail--desktop thumb">
+              <a href="#{{ media.id }}" target="_blank" class="thumbnail-link js-thumbnail-link">
+                <img class="productthumbnail"
+              src="{{ media.preview_image | img_url: '750x' }}"
+              alt="{{ media.alt | escape }}"
+              loading="lazy"
+              data-media-id="{{ media.id }}"
+            >
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <script>
+            $(document).ready(function(){
+              $("a.thumbnail-link").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                  scrollTop: $($(this).attr("href")).offset().top
+                }, 500);
+              })
+            })
+          </script>
+        </div>
       </div>
     </div>
   </product-modal>
