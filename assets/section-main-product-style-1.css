@@ -699,6 +699,12 @@
   width: 8rem;
 }
 
+.thumbnail-link {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
   
   /* Product thumbnail */
   .thumbnails {

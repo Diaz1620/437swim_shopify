@@ -534,18 +534,26 @@
           <ul class="fullscreen-thumbnails">
             {% for media in product.media %}
             <li class="js-fullscreen-thumbnail--desktop thumb">
-              <a href="#{{ media.id }}" target="_blank" class="thumbnail-link js-thumbnail-link">
+              <button onclick="scrollFunction({{ media.id }})" target="_blank" class="thumbnail-link js-thumbnail-link">
                 <img class="productthumbnail"
               src="{{ media.preview_image | img_url: '750x' }}"
               alt="{{ media.alt | escape }}"
               loading="lazy"
               data-media-id="{{ media.id }}"
             >
-              </a>
+              </button>
+              {%- comment -%} <a href="#{{ media.id }}" target="_blank" class="thumbnail-link js-thumbnail-link">
+                <img class="productthumbnail"
+              src="{{ media.preview_image | img_url: '750x' }}"
+              alt="{{ media.alt | escape }}"
+              loading="lazy"
+              data-media-id="{{ media.id }}"
+            >
+              </a> {%- endcomment -%}
             </li>
             {% endfor %}
           </ul>
-          <script>
+          {%- comment -%} <script>
             $(document).ready(function(){
               $("a.thumbnail-link").click(function(event) {
                 event.preventDefault();
@@ -554,6 +562,18 @@
                 }, 500);
               })
             })
+          </script> {%- endcomment -%}
+          <script>
+            function scrollFunction(id){
+              console.log(id)
+              let e = document.getElementById(id);
+              console.log(e)
+              e.scrollIntoView({
+                block:"start",
+                behavior:"smooth",
+                inline:"start"
+              });
+            }
           </script>
         </div>
       </div>
