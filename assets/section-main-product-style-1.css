@@ -695,15 +695,22 @@
     padding-bottom: 10px;
 }
 
-.productthumbnail {
-  width: 8rem;
-}
+  .productthumbnail {
+    width: 8rem;
+  }
 
-.thumbnail-link {
-  background-color: transparent;
-  border: 0px;
-  cursor: pointer;
-}
+  .thumbnail-link {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 750px) {
+    .product-fullscreen-thumbnails {
+      left: -4rem;
+    }
+    
+  }
 
   
   /* Product thumbnail */
