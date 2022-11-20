@@ -711,6 +711,16 @@
     }
     
   }
+  
+  @media screen and (max-width: 490px) {
+    .product-fullscreen-thumbnails {
+      left: -4rem;
+    }
+    .productthumbnail {
+      width: 6rem;
+    }
+
+  }
 
   
   /* Product thumbnail */
