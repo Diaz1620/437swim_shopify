@@ -129,7 +129,7 @@
               "image_1": "shopify:\/\/shop_images\/Sarong_2.jpg",
               "title_1": "SHOP SARONGS",
               "link_1": "shopify:\/\/collections\/sarongs",
-              "image_2": "shopify:\/\/shop_images\/Willow.png",
+              "image_2": "shopify:\/\/shop_images\/2_1ec47c2d-01b8-4b84-a747-aec5c8dfe57f.png",
               "title_2": "SHOP COVER UPS",
               "link_2": "shopify:\/\/collections\/cover-ups",
               "image_3": "shopify:\/\/shop_images\/Tote1.jpg",
@@ -801,22 +801,23 @@
           "c7f23fe4-52cb-499a-84b0-1484d82b6915": {
             "type": "header",
             "settings": {
-              "message": "SHOP OUR HOLIDAY GIFT GUIDE",
-              "link": "shopify:\/\/collections\/gift-guide-2022"
+              "message": "SHOP PIPER SETS | INCLUDING OUR NEW DUSK PRINT",
+              "link": "shopify:\/\/collections\/piper-sets"
             }
           },
           "b12fbca5-2162-4fac-8f6c-16eb34f3be62": {
             "type": "header",
             "settings": {
-              "message": "FREE SHIPPING OVER $100",
+              "message": "FREE SHIPPING WORLDWIDE | CAN + US DUTY FREE",
               "link": "shopify:\/\/collections\/all-swimwear"
             }
           },
           "cb500c34-ab1a-476e-b189-55f8489fd663": {
             "type": "header",
+            "disabled": true,
             "settings": {
-              "message": "SHOP ACTIVE",
-              "link": "shopify:\/\/collections\/active"
+              "message": "NEW CHLOE SET BOGO SALE - $75USD",
+              "link": "shopify:\/\/collections\/holiday-sale"
             }
           }
         },

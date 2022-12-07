@@ -1,7 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+  <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('ts', '3OQFxx2CIaaqFENLxdH7ow');</script>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  {% comment %}
   <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,6 +11,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KFQGJ6D');</script>
   <!-- End Google Tag Manager -->
+  {% endcomment %}
+    
  {%- render 'layouthub_header' -%}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -233,6 +237,7 @@
 
 
   {% render 'qikify-apps' %}
+    {% include "loyaltylion" %}
 </head>
 
   <body {% if template == 'index' %}id="template-index"{% endif %} class="{{ template.name }} {{ page_title | handle }} gradient {% if template == 'index' %}template-index{% endif %}" >
@@ -240,6 +245,17 @@
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFQGJ6D"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV5ED534YV"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-QV5ED534YV');
+      </script>
+    <!-- END Google tag (gtag.js) -->
+      
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -265,7 +281,7 @@
     {%- endif -%}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      <!--LayoutHub-Workspace-Start-->{{ content_for_layout }}<!--LayoutHub-Workspace-End-->
+      <!--LayoutHub-Workspace-Start-->{% capture ICART_FULL_PAGE_LAYOUT %}{{ content_for_layout }}{% endcapture %}{% include 'icart-variables', ICART_FULL_PAGE_LAYOUT: ICART_FULL_PAGE_LAYOUT %}<!--LayoutHub-Workspace-End-->
     </main>
 
     {% section 'footer' %}

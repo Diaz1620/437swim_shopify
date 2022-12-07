@@ -156,8 +156,9 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1920
+            "maxwidth": 1000
           }
         }
       },

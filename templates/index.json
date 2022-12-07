@@ -62,9 +62,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/NOV_21holidaysale1.png",
-        "image_2": "shopify:\/\/shop_images\/holidaygiftguidemobilebanner.png",
-        "url": "shopify:\/\/collections\/tysm",
+        "image": "shopify:\/\/shop_images\/homepage_post_sale_banner.jpg",
+        "image_2": "shopify:\/\/shop_images\/homepage_mobile_post_sale_7a605dce-4159-4271-b32f-20799a49e871.jpg",
+        "url": "shopify:\/\/collections\/holiday-sale",
         "show_override": false,
         "ov_bg_color": "#000000",
         "ov_opacity": "0%",
@@ -110,7 +110,7 @@
       "settings": {
         "title": "",
         "title_align": "center",
-        "collection": "homepage-carousel",
+        "collection": "piper-sets",
         "products_to_show": 4,
         "m_products_to_show": 4,
         "show_view_all": false,
@@ -190,7 +190,7 @@
         "16275737531b63eb15-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Coveteur.jpg",
+            "image": "shopify:\/\/shop_images\/TheCoveteur-removebg-preview.png",
             "title": "",
             "color": "#fcff03",
             "size": "",
@@ -454,8 +454,8 @@
         "title": "NEW IN",
         "title_align": "center",
         "collection": "hp-carousel",
-        "products_to_show": 7,
-        "m_products_to_show": 7,
+        "products_to_show": 8,
+        "m_products_to_show": 8,
         "show_view_all": false,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
@@ -726,6 +726,8 @@
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-testimonial-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1100,
+            "desktopFontSize": 32,
+            "mobileFontSize": 20,
             "maxNumberOfCharacters": 100,
             "quoteMarkIcon": "style-1",
             "reviewerNameColor": "#000000",

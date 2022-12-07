@@ -1,5 +1,15 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -144,6 +154,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1920
           }
@@ -168,18 +179,8 @@
         "custom_liquid": "<script type=\"text\/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"product-form__submit button button--full-width button--primary\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n<\/script>"
       }
     },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
       "settings": {
       }
     }

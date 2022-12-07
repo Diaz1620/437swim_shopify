@@ -1,0 +1,408 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "6c14fd5b-07d0-4a2b-9de6-d3167a51ad1a": {
+          "type": "collection",
+          "settings": {
+            "coll": "",
+            "show_collection_title": true,
+            "show_collection_description": true,
+            "image": "shopify:\/\/shop_images\/11_dd31222d-bdc8-4109-a500-44be9f1ccd4c.jpg",
+            "m_image": "shopify:\/\/shop_images\/2_cae21afd-4e67-405b-b0a3-55575527a3a5.jpg",
+            "countdown": "2022-07-29T12:00:00",
+            "show_override": false,
+            "ov_bg_color": "",
+            "color": "#ffffff",
+            "ov_opacity": ""
+          }
+        }
+      },
+      "block_order": [
+        "6c14fd5b-07d0-4a2b-9de6-d3167a51ad1a"
+      ],
+      "settings": {
+      }
+    },
+    "8f37fba2-a09e-4d9c-9407-082e0d55e9b8": {
+      "type": "collection-see",
+      "blocks": {
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pilates.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/the-pilates-yoga-girl"
+          }
+        },
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LIFTS.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/the-girl-who-lifts"
+          }
+        },
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alwaysonvactation.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/the-girl-whos-always-on-vacation"
+          }
+        },
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/colorlover.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/the-girl-who-loves-colour"
+          }
+        },
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/basicslover.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/the-girl-who-loves-basics"
+          }
+        },
+        "23d51e3e-76c8-49a3-bdac-05ebab4c0ddf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/COUPLES.png",
+            "title": "",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/for-the-couples"
+          }
+        },
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-5": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobilebannerpiperessentials2_5472271f-131a-4f70-8276-9ed355b7c69c.png",
+            "title": "GIFTS FOR GIRLFRIEND",
+            "color": "",
+            "weight": "",
+            "size": "",
+            "m_color": "",
+            "m_weight": "",
+            "m_size": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/guide-for-the-boyfriend-who-doesn-t-know-what-to-get-his-girlfriend"
+          }
+        }
+      },
+      "block_order": [
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-0",
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-1",
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-2",
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-3",
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-4",
+        "23d51e3e-76c8-49a3-bdac-05ebab4c0ddf",
+        "template--14843213938730__8f37fba2-a09e-4d9c-9407-082e0d55e9b8-1668092178a7392903-5"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "8f115cf3-b884-4003-9e2f-f6dd49e3b6ab": {
+      "type": "collection-two-column",
+      "disabled": true,
+      "blocks": {
+        "template--14843213938730__8f115cf3-b884-4003-9e2f-f6dd49e3b6ab-1668091372715fa3ca-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobilebannerpiperessentials2.png",
+            "button_label": "Button label",
+            "button_link": "",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "width": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_width": ""
+          }
+        },
+        "template--14843213938730__8f115cf3-b884-4003-9e2f-f6dd49e3b6ab-1668091372715fa3ca-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobilebannerpiperessentials2.png",
+            "button_label": "Button label",
+            "button_link": "",
+            "bg": "",
+            "border": "",
+            "color": "",
+            "size": "",
+            "weight": "",
+            "width": "",
+            "m_bg": "",
+            "m_border": "",
+            "m_color": "",
+            "m_size": "",
+            "m_weight": "",
+            "m_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14843213938730__8f115cf3-b884-4003-9e2f-f6dd49e3b6ab-1668091372715fa3ca-0",
+        "template--14843213938730__8f115cf3-b884-4003-9e2f-f6dd49e3b6ab-1668091372715fa3ca-1"
+      ],
+      "settings": {
+        "title": "",
+        "color": "",
+        "weight": "",
+        "size": "",
+        "m_color": "",
+        "m_weight": "",
+        "m_size": ""
+      }
+    },
+    "823cff33-6af6-4e3b-a084-c7852b6480e0": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "5-to-9"
+          }
+        },
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hylas-picks"
+          }
+        },
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "active"
+          }
+        }
+      },
+      "block_order": [
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-0",
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-1",
+        "template--14843213938730__823cff33-6af6-4e3b-a084-c7852b6480e0-1668091381de45d91d-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "59e7ca86-bcfe-462b-a90b-1d101f3d72c5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "title_align": "center",
+        "collection": "gift-guide-2022",
+        "products_to_show": 16,
+        "m_products_to_show": 16,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "email": {
+      "type": "main-collection-email-banner",
+      "blocks": {
+        "f5ba7260-e1c2-4021-a42e-652601edf59d": {
+          "type": "collection",
+          "settings": {
+            "coll": "",
+            "show_title": false,
+            "show_desc": true,
+            "form": "<div class=\"klaviyo-form-XJxV7B\"><\/div>",
+            "w_height": "200px",
+            "w_bg_color": "#794842",
+            "w_bg_image": "shopify:\/\/shop_images\/EmailSignUp_Desktop.jpg",
+            "w_bg_style": "cover",
+            "w_horizontal": "center",
+            "w_vertical": "center",
+            "c_width": "100%",
+            "c_align": "center",
+            "c_padding": "0 25px",
+            "t_size": "",
+            "t_weight": "",
+            "t_margin": "0 0 20px 0",
+            "t_color": "",
+            "w_m_height": "30vh",
+            "w_m_bg_color": "",
+            "w_m_bg_image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-07_at_3.27.04_PM.png",
+            "w_m_bg_style": "cover",
+            "w_m_horizontal": "center",
+            "w_m_vertical": "center",
+            "c_m_width": "",
+            "c_m_align": "center",
+            "c_m_padding": "0 15px",
+            "t_m_size": "",
+            "t_m_weight": "",
+            "t_m_margin": "0 0 20px 0",
+            "t_m_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5ba7260-e1c2-4021-a42e-652601edf59d"
+      ],
+      "settings": {
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "blocks": {
+        "6a937439-7294-4e01-b2e7-7aeb8ec869e6": {
+          "type": "filter",
+          "settings": {
+            "label": "Type",
+            "tag_prefix": "C_TYPES_",
+            "tags": "TOPS|BOTTOMS|ONEPIECES|COVERUP|REVERSIBLE"
+          }
+        },
+        "54c8a946-7605-403a-98eb-58d331a84a4a": {
+          "type": "filter",
+          "settings": {
+            "label": "FABRIC",
+            "tag_prefix": "C_FABRICS_",
+            "tags": "CLASSIC|MESH|437SMOOTH™|CRINKLE|437CLOUD™"
+          }
+        },
+        "a7e2d480-c317-4dc2-9f3b-3790cc6023bc": {
+          "type": "filter",
+          "settings": {
+            "label": "COVERAGE",
+            "tag_prefix": "C_COVERAGES_",
+            "tags": "THONG|CHEEKY|MID|FULL"
+          }
+        },
+        "3c1877f3-82fd-419e-8421-92c534807f30": {
+          "type": "filter",
+          "settings": {
+            "label": "Colors",
+            "tag_prefix": "",
+            "tags": "persia|cocoa|espresso|off-white|gold|espresso-ii|paradiso|aqua|natural|zebra|python|y2k|stunning-queen|flora|valencia|pomelo|rose-water|cream|bloom|buttercream|espresso|babygirl|eden|sky"
+          }
+        }
+      },
+      "block_order": [
+        "6a937439-7294-4e01-b2e7-7aeb8ec869e6",
+        "54c8a946-7605-403a-98eb-58d331a84a4a",
+        "a7e2d480-c317-4dc2-9f3b-3790cc6023bc",
+        "3c1877f3-82fd-419e-8421-92c534807f30"
+      ],
+      "settings": {
+        "products_per_page": 48,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "show_colors": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    },
+    "0baa8a68-a29b-45c1-af20-8ced2655cfe7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "GIFTS FOR GIRLFRIEND"
+          }
+        },
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Significant others, this one’s for you. Guide for the boyfriend who doesn’t know what to get his girlfriend<\/p>"
+          }
+        },
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/guide-for-the-boyfriend-who-doesn-t-know-what-to-get-his-girlfriend"
+          }
+        }
+      },
+      "block_order": [
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-0",
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-1",
+        "template--14843213938730__0baa8a68-a29b-45c1-af20-8ced2655cfe7-1668091672d6bcf4dd-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/girlfriends.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "8f37fba2-a09e-4d9c-9407-082e0d55e9b8",
+    "8f115cf3-b884-4003-9e2f-f6dd49e3b6ab",
+    "823cff33-6af6-4e3b-a084-c7852b6480e0",
+    "59e7ca86-bcfe-462b-a90b-1d101f3d72c5",
+    "email",
+    "product-grid",
+    "0baa8a68-a29b-45c1-af20-8ced2655cfe7"
+  ]
+}
