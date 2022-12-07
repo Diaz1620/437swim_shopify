@@ -2112,7 +2112,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__menu-item {
-  padding: 12px 15px;
+  padding: 18px 15px 12px 15px;
   text-decoration: none;
   /* color: var(--color-foreground-75); */
   color: #444;
